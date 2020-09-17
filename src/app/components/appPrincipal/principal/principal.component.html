@@ -1,0 +1,31 @@
+<div id="bar" class="d-flex text-white">
+    <div class="flex-grow-1 text-center">
+        Staff Administrations
+    </div>
+    <button class="btn btn-1 mr-1" (click)="Cerrar()">
+        <i class="icon icon-close text-white"></i>
+    </button>
+</div>
+<div id="container" class="p-3">    
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="btn btn-3 btn-tab active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+            <img src="../../../../assets/images/user.png" class="mr-2"/>Staff</a>
+        <a class="btn btn-4 btn-tab" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+            <img src="../../../../assets/images/grupo.png" class="mr-2"/>Groups</a>
+        <a class="btn btn-5 btn-tab" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
+            <img src="../../../../assets/images/empresa.png" class="mr-2"/>Company</a>
+        </div>
+    </nav>
+    <div class="tab-content p-2" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <app-personal></app-personal>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <app-grupos></app-grupos>
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+           <app-empresa></app-empresa>
+        </div>
+    </div>
+</div>

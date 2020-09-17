@@ -1,0 +1,147 @@
+:root{
+  --height: ;
+}
+#main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height:  calc(100vh - 9em);
+  overflow: scroll;
+}
+#left{
+   padding: 0.5em;
+   width: 100%;
+}
+
+#right{
+  padding: 0.5em;
+  width: 100%;
+}
+
+.bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-SteelBlue);
+  height: 40px;
+  color: white;
+  width: 100%;
+}
+.divs{
+  width: 15%;
+}
+
+.text-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#tabla{
+  width: 100%;
+  height: calc(100vh - 14em);
+  overflow: scroll;
+}
+
+thead tr th {     
+  background-color: #4682B4;
+  color: white;
+  text-align: center;  
+  position: sticky;
+  top: 0;
+  z-index: 10;  
+  box-shadow: 0 0 0 1px #dee2e6; 
+}
+
+.table tbody tr td{
+  text-align: center; 
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px){
+  #main{
+    flex-direction: row;
+    width: 100%;
+  }
+  #left{  
+     width: 50%;
+  }
+  
+  #right{
+    width: 50%;
+  }
+  .alto{
+    height: 7em;
+  }
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img{
+    width: 100px;
+    height: 100px;
+}
+
+.input-group-prepend{
+    color: #ffffff;
+    background-color: var(--color-SteelBlue);
+    border: 1px solid var(--color-SteelBlue);
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    width: 6em;
+}
+
+.input-group-text {
+    color: #ffffff;
+    background-color: var(--color-SteelBlue);
+    border: none;
+    border-top-left-radius: 1em !important;
+    border-bottom-left-radius: 1em !important;
+    
+  }
+  
+.form-control-radius {
+    border: 1px solid var(--color-SteelBlue);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+  }
+  
+  .form-control-radius:focus {
+    box-shadow: none;
+  }
+
+  .custom-select-radius {
+    border:1px solid var(--color-SteelBlue);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+  }
+
+  .custom-select-radius:focus {
+    box-shadow: none;
+  }

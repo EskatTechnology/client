@@ -1,0 +1,458 @@
+#main{    
+    height: 100vh;    
+    background-image: url('../../../assets/images/Image.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    /*background: #2c3e50; 
+    background: -webkit-linear-gradient(to right, #2c3e50, #3498db);
+    background: linear-gradient(to right, #2c3e50, #3498db);*/
+}
+
+#bar{
+    height: 3em;
+    background-color: var(--color-SteelBlue);
+}
+
+#logo{
+    height: 2.5em;
+}
+.flag{
+    height: 24px;
+    width: 35px ;
+}
+
+#profile{
+    display: flex;
+    flex-direction: row;
+}
+
+#khronos{
+    height: 5em;
+}
+
+#profile> div{
+    display: flex;
+    flex-direction: column;
+}
+
+#foto{
+    height: 4em;
+    width: 3em;
+}
+.name{
+    font-size: 0.9em;
+}
+#msg{
+    height: 2.5em;
+}
+
+#btn-msg {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    color: #1A9FF2;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+#btn-msg:hover {
+    color: var(--color-SteelBlue)
+}
+
+#btn-msg:focus, #btn-msg.focus {
+    outline: 0;
+    color: var(--color-SteelBlue);
+}
+
+#icon-msg{    
+    font-size: 3em;         
+}
+
+#num-msg{
+    position: absolute;
+    left: 35px;
+    top: 25px;
+    border-radius: 25px;
+}
+.badge-blue {
+    color: #fff;
+    background-color: #1669e2;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - (16em));   
+}
+
+#menu>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    font-size: 0.75em;
+}
+
+.btn-menu{
+    width: 13em;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px black;
+    -webkit-box-shadow: 3px 3px 5px black;
+    -moz-box-shadow: 3px 3px 5px black;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 0;
+}
+
+.icono{
+    height: 55px;
+}
+
+.icono>img{
+    height: 3.3em;
+}
+
+footer{    
+    height: 5em;
+    padding-top: 1.5em;
+}
+footer >p{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/*btn-Config Boton Configuracion*/
+.btn-config {
+    color: var(--color-Font);
+    background-color: var(--color-Config);
+    border-color: var(--color-Config); 
+}
+    
+.btn-config:hover {
+    color: var(--color-Font);
+    background-color:var(--color-Config-Hover);
+    border-color: var(--color-Config-Hover);
+}
+    
+.btn-config:focus, .btn-config.focus {
+    color: var(--color-Font);
+    background-color: var(--color-Config-Hover);
+    border-color: var(--color-Config-Hover);
+}
+
+.btn-config.disabled, .btn-config:disabled {
+    color: var(--color-Font-Disabled);
+    background-color: var(--color-Disabled);
+    border-color: var(--color-Disabled);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); 
+}
+    
+.btn-config:not(:disabled):not(.disabled):active, .btn-config:not(:disabled):not(.disabled).active,
+.show > .btn-config.dropdown-toggle {
+    color: var(--color-Font);
+    background-color: var(--color-Config);
+    border-color: var(--color-Config);
+}
+
+/*btn-Personal Boton Personal*/
+.btn-personal {
+    color: var(--color-Font);
+    background-color: var(--color-Personal);
+    border-color: var(--color-Personal);
+}
+    
+.btn-personal:hover {
+    color: var(--color-Font);
+    background-color:var(--color-Personal-Hover);
+    border-color: var(--color-Personal-Hover);
+}
+    
+.btn-personal:focus, .btn-personal.focus {
+    color: var(--color-Font);
+    background-color: var(--color-Personal-Hover);
+    border-color: var(--color-Personal-Hover);
+}
+
+.btn-personal.disabled, .btn-personal:disabled {
+    color: var(--color-Font-Disabled);
+    background-color: var(--color-Disabled);
+    border-color: var(--color-Disabled);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); 
+}
+    
+.btn-personal:not(:disabled):not(.disabled):active, .btn-personal:not(:disabled):not(.disabled).active,
+.show > .btn-personal.dropdown-toggle {
+    color: var(--color-Font);
+    background-color: var(--color-Personal);
+    border-color: var(--color-Personal);
+}
+
+/*btn-Inventario Boton Inventario*/
+.btn-inventario {
+    color: var(--color-Font);
+    background-color: var(--color-Inventario);
+    border-color: var(--color-Inventario);
+}
+    
+.btn-inventario:hover {
+    color: var(--color-Font);
+    background-color:var(--color-Inventario-Hover);
+    border-color: var(--color-Inventario-Hover);
+}
+    
+.btn-inventario:focus, .btn-inventario.focus {
+    color: var(--color-Font);
+    background-color: var(--color-Inventario-Hover);
+    border-color: var(--color-Inventario-Hover);
+}
+
+.btn-inventario.disabled, .btn-inventario:disabled {
+    color: var(--color-Font-Disabled);
+    background-color: var(--color-Disabled);
+    border-color: var(--color-Disabled);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); 
+}
+    
+.btn-inventario:not(:disabled):not(.disabled):active, .btn-inventario:not(:disabled):not(.disabled).active,
+.show > .btn-inventario.dropdown-toggle {
+    color: var(--color-Font);
+    background-color: var(--color-Inventario);
+    border-color: var(--color-Inventario);
+}
+
+/*btn-Vehicular Boton Vehicular*/
+.btn-vehicular {
+    color: var(--color-Font);
+    background-color: var(--color-Vehicular);
+    border-color: var(--color-Vehicular);
+}
+    
+.btn-vehicular:hover {
+    color: var(--color-Font);
+    background-color:var(--color-Vehicular-Hover);
+    border-color: var(--color-Vehicular-Hover);
+}
+    
+.btn-vehicular:focus, .btn-vehicular.focus {
+    color: var(--color-Font);
+    background-color: var(--color-Vehicular-Hover);
+    border-color: var(--color-Vehicular-Hover);
+}
+
+.btn-vehicular.disabled, .btn-vehicular:disabled {
+    color: var(--color-Font-Disabled);
+    background-color: var(--color-Disabled);
+    border-color: var(--color-Disabled);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); 
+}
+    
+.btn-vehicular:not(:disabled):not(.disabled):active, .btn-vehicular:not(:disabled):not(.disabled).active,
+.show > .btn-vehicular.dropdown-toggle {
+    color: var(--color-Font);
+    background-color: var(--color-Vehicular);
+    border-color: var(--color-Vehicular);
+}
+
+/*btn-Reportes Boton Reportes*/
+.btn-reportes {
+    color: var(--color-Font);
+    background-color: var(--color-Reportes);
+    border-color: var(--color-Reportes);
+}
+    
+.btn-reportes:hover {
+    color: var(--color-Font);
+    background-color:var(--color-Reportes-Hover);
+    border-color: var(--color-Reportes-Hover);
+}
+    
+.btn-reportes:focus, .btn-reportes.focus {
+    color: var(--color-Font);
+    background-color: var(--color-Reportes-Hover);
+    border-color: var(--color-Reportes-Hover);
+}
+
+.btn-reportes.disabled, .btn-reportes:disabled {
+    color: var(--color-Font-Disabled);
+    background-color: var(--color-Disabled);
+    border-color: var(--color-Disabled);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); 
+}
+    
+.btn-reportes:not(:disabled):not(.disabled):active, .btn-reportes:not(:disabled):not(.disabled).active,
+.show > .btn-reportes.dropdown-toggle {
+    color: var(--color-Font);
+    background-color: var(--color-Reportes);
+    border-color: var(--color-Reportes);
+}   
+/*Inicio estilos Banderas idioma*/
+.select-sim {
+  width:2.5em;
+  height:2em;
+  line-height:2em;
+  position:relative;
+  background:transparent;
+  overflow:hidden;
+}
+
+.select-sim:hover {
+  overflow:visible;
+}
+
+.select-sim:hover .options .option label {
+  display:inline-block;
+}
+
+.select-sim:hover .options {
+  background: rgba(0,0,0,0.7);
+  position:absolute;
+  width:100%;
+  height: 4em;
+}
+
+.select-sim .options .option {
+  overflow:hidden;
+}
+
+.select-sim .options .option:hover {
+  background:rgba(255,255,255,0.3);
+}
+
+.select-sim:hover .options .option {
+  height:2em;
+  overflow:hidden;
+}
+
+.select-sim .options .option img {
+  vertical-align:middle;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.select-sim .options .option label {
+  display:none;
+}
+
+.select-sim .options .option input {
+  overflow:hidden;
+  position: absolute;
+  left: -10000px;
+}
+
+.select-sim .options .option input:checked + label {
+  display:block;
+  width:100%;
+}
+
+.select-sim:hover .options .option input + label {
+  display:block;
+}
+/*Fin estilos idioma*/
+
+@media screen and (min-width: 576px){
+    #menu{
+        height: calc(100% - (18em));   
+    }
+    #menu>div{
+        flex-direction: row;
+        font-size: 0.7em;
+    }
+    #khronos{
+        height: 5em; 
+    }
+    .btn-menu{
+        margin-right: 0.5em;    
+    }
+    .icono{
+        height: 55px;
+    }    
+    .icono>img{
+        height: 3em;
+    }
+    footer{    
+        height: 7em;
+    }
+    footer >p{
+        font-size: 1em;
+        padding-top: 3em;
+    }    
+}
+
+@media screen and (min-width: 768px){
+    
+    #khronos{
+        height: 7.5em;
+    }
+    
+    #foto{
+        height: 4.5em;
+        width: 3.3em;
+    }
+    #msg{
+        height: 2em;
+    }
+    
+    #btn-msg {
+        font-size: 1.2rem;
+    }    
+    
+    #num-msg{
+        left: 40px;
+        top: 30px;
+    }
+    .name{
+        font-size: 1.2em;
+    }
+    #menu{
+        height: calc(100% - (20em));   
+    }
+    #menu>div{
+        flex-direction: row;
+        font-size: 1em;
+    }
+    .btn-menu{
+        font-size: 1em;
+    }
+    .icono{
+        height: 85px;
+    }    
+    footer{    
+        height: 6em;
+    }
+    footer >p{
+        font-size: 2em;
+        padding-top: 0em;
+    }    
+}
+
+

@@ -1,0 +1,98 @@
+:root{
+    --height:  calc(100vh - 10em);
+}
+#main{
+    width: 100%;
+    overflow: hidden;
+}
+
+.input-group-prepend{
+    color: #ffffff;
+    background-color: var(--color-SteelBlue);
+    border: 1px solid var(--color-SteelBlue);
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+.input-group-text {
+    color: #ffffff;
+    background-color: var(--color-SteelBlue);
+    border: none;
+    border-top-left-radius: 1em !important;
+    border-bottom-left-radius: 1em !important;
+    
+  }
+  
+.form-control-radius {
+    border: 1px solid var(--color-SteelBlue);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+  }
+  
+  .form-control-radius:focus {
+    box-shadow: none;
+  }
+
+  .custom-select{
+      width: 1em !important;
+  }
+  .custom-select-radius {
+    border:1px solid var(--color-SteelBlue);
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+  }
+
+  .custom-select-radius:focus {
+    box-shadow: none;
+  }
+
+  .inp-select{
+      width: 70%;
+  }
+  .inp-control{
+      width: 70%;
+  }
+  .inp-text{
+      display: none;
+  }
+  
+  @media screen and (min-width: 576px){
+    .inp-select{
+        width: 45%;
+    }
+    .inp-control{
+        width: 40%;
+    }
+    .inp-text{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .inp-select{
+        width: 25%;
+    }
+    .inp-control{
+        width: 30%;
+    }
+}
+
+#tabla{
+    width: 100%;
+    height: calc(100vh - 14em);
+    overflow: scroll;
+}
+
+thead tr th {     
+    background-color: #4682B4;
+    color: white;
+    text-align: center;  
+    position: sticky;
+    top: 0;
+    z-index: 10;  
+    box-shadow: 0 0 0 1px #dee2e6; 
+}
+
+.table tbody tr td{
+    text-align: center; 
+    vertical-align: middle;
+}

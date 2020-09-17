@@ -1,0 +1,28 @@
+{
+    "bienvenido":"Bienvenido!",
+    "user": "Usuario",
+    "pass": "Contraseña",
+    "login": "INGRESAR",
+    "loading": "Cargando...",
+    "data-incorrect": "Usuario o contraseña incorrecta",
+    "logout": "Cerrar Sesión",
+    "btn-conf": "Administración de Personal",
+    "btn-personal": "Control Personal",
+    "btn-inventory": "Control Inventario",
+    "btn-vehicle": "Control Vehicular",
+    "btn-reports": "Reportes",
+    "noConexion": "No hay conexión con el servidor",
+    "noRecurso": "Recurso no encontrado",
+    "btnNO":"No",
+    "btnSI":"Ok",
+    "estaSeguro":"¿Estás seguro?",
+    "cerrarSesion":"¿Quiere cerrar la sesión?",
+    "":"",
+    "":"",
+    "":"",
+    "":"",
+    "":""
+
+
+
+}

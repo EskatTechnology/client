@@ -1,0 +1,23 @@
+{
+    "bienvenido":"Welcom Back!",
+    "user": "User",
+    "pass": "Password",
+    "login" : "LOGIN",
+    "loading": "Loading...",
+    "data-incorrect": "User or password incorrect",
+    "logout": "Logout",
+    "btn-conf": "Staff Administration",
+    "btn-personal": "Personal Control",
+    "btn-inventory": "Inventary Control",
+    "btn-vehicle": "Vehicle Control",
+    "btn-reports": "Reports",
+    "noConexion": "No connection to the server",
+    "noRecurso": "Resource not found",
+    "btnNO":"No",
+    "btnSI":"Yes",
+    "estaSeguro":"Are you sure?",
+    "cerrarSesion":"Would you like to log out?",
+    "":"",
+    "":"",
+    "":""
+}

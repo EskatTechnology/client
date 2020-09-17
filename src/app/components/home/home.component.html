@@ -1,0 +1,90 @@
+<div id="main"> 
+    <section id="bar" class="d-flex p-1">
+        <div class="flex-grow-1">
+            <img id="logo"  src="../../assets/images/LogoEskat.png">
+        </div>       
+        <div class="select-sim align-self-center mr-2">
+            <div class="options">
+              <div class="option">
+                <input type="radio" name="flag" id="us" checked (change)="onChange('us')" />
+                <label class="label" for="us">
+                  <img class="flag" src="../../assets/images/banderaUS.png" alt="" />
+                </label>
+              </div>
+              <div class="option">
+                <input type="radio" name="flag" id="es" (change)="onChange('es')"/>
+                <label class="label" for="es">
+                  <img  class="flag" src="../../assets/images/banderaES.png" alt="" />
+                </label>
+              </div>
+            </div>
+        </div>        
+        <button id="btn-Close" class="btn btn-sm btn-round btn-2 align-self-center" (click)="logout()">{{ 'logout' | translate }}</button>
+    </section>
+
+    <section id="profile" class="d-flex justify-content-between p-1">
+        <div class="ml-2">
+            <img id="khronos" src="../../assets/images/Icon_Khronos.png">
+        </div>        
+       <div >
+            <div class="d-flex justify-content-center align-items-center mr-2">
+                <div class="d-flex flex-column align-items-end mr-2"> 
+                    <span class="name text-right">{{user}}</span>
+                    <span class="name text-right">{{Empresa.Apellidos}}</span>
+                </div>            
+                <img id="foto" class="rounded" src="../../assets/images/LogoEskat.png">
+            </div> 
+            <div id="msg" class="d-flex flex-row-reverse">
+                <button id="btn-msg" type="button" class=" mr-3">
+                    <i id="icon-msg" class="icon-mail-envelope-closed3"></i>
+                    <span id="num-msg" class="badge badge-blue">0</span>
+              </button>
+            </div>            
+        </div>
+    </section>
+    <section id="menu">
+        <div>
+            <div></div>
+            <button id="btnConf" class="btn btn-menu btn-config d-flex justify-content-center align-items-center mb-2" (click)="Config()">
+                <div class="icono d-flex justify-content-center align-items-center ml-3 mr-2 ">
+                    <img src="../../assets/images/IconoConfig.png">
+                </div>                
+                <span class="mr-2 flex-grow-1 text-left">{{ 'btn-conf' | translate }}</span>
+            </button>
+            <div></div>
+        </div>
+        <div>
+            <button id="btnPersonal" class="btn btn-menu btn-personal d-flex justify-content-center align-items-center mb-2" (click)="Personal()">
+                <div class="icono d-flex justify-content-center align-items-center ml-3 mr-2">
+                    <img src="../../assets/images/IconoPersonal.png">
+                </div>                
+                <span class="mr-3 flex-grow-1 text-left">{{ 'btn-personal' | translate }}</span>
+            </button>
+            <button id="btnInventario" class="btn btn-menu btn-inventario d-flex justify-content-center align-items-center mb-2">
+                <div class="icono d-flex justify-content-center align-items-center ml-3 mr-2">
+                    <img src="../../assets/images/IconoInventario.png">
+                </div>                
+                <span class="mr-3 flex-grow-1 text-left">{{ 'btn-inventory' | translate }}</span>
+            </button>
+            <button id="btnVehicular" class="btn btn-menu btn-vehicular d-flex justify-content-center align-items-center mb-2">
+                <div class="icono d-flex justify-content-center align-items-center ml-3 mr-2">
+                    <img src="../../assets/images/IconoVehicular.png">
+                </div>                
+                <span class="mr-3 flex-grow-1 text-left">{{ 'btn-vehicle' | translate }}</span>
+            </button>
+        </div>
+        <div>
+            <div></div>
+            <button id="btnReportes" class="btn btn-menu btn-reportes d-flex justify-content-center align-items-center mb-2">
+                <div class="icono d-flex justify-content-center align-items-center ml-3 mr-2">
+                    <img src="../../assets/images/IconoReportes.png">
+                </div>                
+                <span class="mr-3 flex-grow-1 text-left">{{ 'btn-reports' | translate }}</span>
+            </button>
+            <div></div>
+        </div>
+    </section>
+    <footer class="text-center">
+        <p>{{Empresa.NombreEmpresa}}</p>
+    </footer>
+</div>
