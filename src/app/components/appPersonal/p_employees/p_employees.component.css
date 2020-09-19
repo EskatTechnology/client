@@ -1,0 +1,67 @@
+@import url("../p_styles.css");
+
+:root{
+    --height:  calc(100vh - 10em);
+}
+#main{
+    width: 100%;
+    overflow: hidden;
+}
+.inp-select{
+    width: 70%;
+}
+.inp-control{
+    width: 70%;
+}
+.inp-text{
+    display: none;
+}
+
+.selectbox{
+    width: 10em !important;
+}
+.opciones{
+    width: 10em !important;
+}
+
+@media screen and (min-width: 576px){
+    .inp-select{
+        width: 45%;
+    }
+    .inp-control{
+        width: 40%;
+    }
+    .inp-text{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .inp-select{
+        width: 25%;
+    }
+    .inp-control{
+        width: 30%;
+    }
+}
+
+#tabla{
+    width: 100%;
+    height: calc(100vh - 14em);
+    overflow: scroll;
+}
+
+thead tr th {     
+    background-color: var(--color-Red);
+    color: white;
+    text-align: center;  
+    position: sticky;
+    top: 0;
+    z-index: 10;  
+    box-shadow: 0 0 0 1px #dee2e6; 
+}
+
+.table tbody tr td{
+    text-align: center; 
+    vertical-align: middle;
+}

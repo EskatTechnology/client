@@ -1,3 +1,5 @@
+@import url("../a_styles.css");
+
 :root{
   --height: ;
 }
@@ -58,6 +60,13 @@ thead tr th {
   text-align: center; 
   vertical-align: middle;
 }
+.selectbox{
+  width: 10em !important;
+}
+.opciones{
+  width: 10em !important;
+}
+
 
 @media screen and (min-width: 768px){
   #main{
@@ -73,8 +82,7 @@ thead tr th {
   }
   .alto{
     height: 7em;
-  }
-  
+  } 
   
 }
 

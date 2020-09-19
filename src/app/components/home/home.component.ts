@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
   public activeLang: string;
   Empresa = new Empresa();
 
-  user = "aaaaaaaaa";
+  user = "";
   ngOnInit(): void {
     
     /*this.mensajes.getValidarMensajes(localStorage.getItem('IdUsuario')).subscribe((res) => { 

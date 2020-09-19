@@ -55,16 +55,26 @@
         </div>
         <input type="text" class="form-control form-control-radius " required> 
       </div>
-      <div class="inp-select input-group input-group-sm mt-1">
+      <div class="input-group input-group-sm mt-1">
         <div class="input-group-prepend">
           <span class="input-group-text">Group</span>
-        </div>
-        <select class="custom-select custom-select-radius">
-          <option value="">Choose...</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+        </div>       
+        <div class="selectbox">
+          <div class="selection" id="selections" onclick="Selected()">
+              <div class="contenido-select">
+                <span class="texto">Seleccione...</span>
+              </div>
+              <i class="icon icon-angle-down ml-3"></i>
+          </div>
+           <div class="opciones" id="opcioness">
+             <a class="opcion" *ngFor="let item of miArray" onclick="CloseSelects()">
+               <div class="contenido-opcion" id="opcionSelect">
+                  <span class="texto">{{item}}</span>
+               </div>
+              </a>
+           </div> 
+        </div>  
+        <input type="hidden" #selected id="inputSelect" value=""/>  
       </div>
       <button id="btn-Close" class="btn btn-sm btn-round btn-3 mt-1 ml-auto">
         <span class="inp-text">Create Charge</span>

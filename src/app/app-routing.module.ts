@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from '../app/components/login/login.component';
 import { HomeComponent } from '../app/components/home/home.component';
-import { PrincipalComponent } from '../app/components/appPrincipal/principal/principal.component'
-import { MainComponent } from '../app/components/appPersonal/main/main.component'
+import { A_MainComponent } from '../app/components/appAdmin/a_main/a_main.component'
+import { P_MainComponent } from '../app/components/appPersonal/p_main/p_main.component'
 import { AuthGuard } from './lib/auth.guard';
 
 const routes: Routes = [
@@ -23,12 +23,12 @@ const routes: Routes = [
   },
   {
     path: 'config',
-    component: PrincipalComponent,
+    component: A_MainComponent,
     //canActivate:[AuthGuard]
   },
   {
     path: 'personal',
-    component: MainComponent,
+    component: P_MainComponent,
     //canActivate:[AuthGuard]
   },
 ];

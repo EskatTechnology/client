@@ -1,3 +1,5 @@
+@import url("../a_styles.css");
+
 :root{
     --height:  calc(100vh - 10em);
 }
@@ -54,6 +56,13 @@
   .inp-text{
       display: none;
   }
+
+  .selectbox{
+    width: 10em !important;
+}
+.opciones{
+    width: 10em !important;
+}
   
   @media screen and (min-width: 576px){
     .inp-select{

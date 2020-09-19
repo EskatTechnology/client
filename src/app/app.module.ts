@@ -11,13 +11,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { LoginComponent } from '../app/components/login/login.component';
 import { HomeComponent } from '../app/components/home/home.component';
-import { PrincipalComponent } from './components/appPrincipal/principal/principal.component'
-import { PersonalComponent } from './components/appPrincipal/personal/personal.component'
-import { GruposComponent } from './components/appPrincipal/grupos/grupos.component'
-import { EmpresaComponent } from './components/appPrincipal/empresa/empresa.component'
-import { MainComponent } from './components/appPersonal/main/main.component'
 
-import { EmployeesComponent } from '../app/components/appPersonal/employees/employees.component'
+import { A_MainComponent } from './components/appAdmin/a_main/a_main.component'
+import { A_PersonalComponent } from './components/appAdmin/a_personal/a_personal.component'
+import { A_GruposComponent } from './components/appAdmin/a_grupos/a_grupos.component'
+import { A_EmpresaComponent } from './components/appAdmin/a_empresa/a_empresa.component'
+
+import { P_MainComponent } from './components/appPersonal/p_main/p_main.component'
+import { P_EmployeesComponent } from './components/appPersonal/p_employees/p_employees.component'
 
 //Services
 import { TokenInterceptorService } from './lib/token-interceptor.service';
@@ -29,12 +30,12 @@ import { AppMensajeriaService } from './services/appMensajeria.service';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    PrincipalComponent, 
-    PersonalComponent,
-    GruposComponent,
-    EmpresaComponent,
-    MainComponent,
-    EmployeesComponent
+    A_MainComponent, 
+    A_PersonalComponent,
+    A_GruposComponent,
+    A_EmpresaComponent,
+    P_MainComponent,
+    P_EmployeesComponent
   ],
   imports: [
     BrowserModule,
