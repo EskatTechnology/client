@@ -1,0 +1,56 @@
+@import url('../p_styles.css');
+
+.selectbox{
+    width: 10em;
+}
+
+.opciones{
+    width: 10em;
+    z-index: 300 !important;
+}
+
+#selct6{
+    width: 12em !important;
+}
+
+#opciones6{
+    width: 12em !important;
+}
+
+.inp-text{
+    display: none;
+}
+
+#tabla{
+    width: 100%;
+    height: calc(100vh - 14em);
+    overflow: scroll;
+}
+
+thead tr th {     
+    background-color: var(--color-Red);
+    color: white;
+    text-align: center;  
+    position: sticky;
+    top: 0;
+    z-index: 10;  
+    box-shadow: 0 0 0 1px #dee2e6; 
+}
+
+.table tbody tr td{
+    text-align: center; 
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 576px){
+    #selct6{
+        width: 15em !important;
+    }
+    
+    #opciones6{
+        width: 15em !important;
+    }
+    .inp-text{
+        display: inline;
+    }
+}

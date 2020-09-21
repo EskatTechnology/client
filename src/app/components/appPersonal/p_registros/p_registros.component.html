@@ -1,0 +1,137 @@
+<div class="d-flex justify-content-center align-items-center">
+  <h1>Records</h1>
+</div>
+<div id="main">
+  <div class="d-flex mb-2">
+    <div class="input-group input-group-sm">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Group</span>
+      </div>
+      <div class="selectbox">
+        <div class="selection" id="selection5" onclick="Select5()">
+            <div class="contenido-select">
+              <span class="texto">Seleccione...</span>
+            </div>
+            <i class="icon icon-angle-down ml-3"></i>
+        </div>
+         <div class="opciones" id="opciones5">
+           <a class="opcion" *ngFor="let item of miArray1" onclick="CloseSelect5()">
+             <div class="contenido-opcion" id="opcionSelect">
+                <span class="texto">{{item}}</span>
+             </div>
+            </a>
+         </div> 
+      </div>  
+      <input type="hidden" #selected3 id="inputSelect" value=""/>    
+    </div>   
+  </div>
+  <div class="d-flex mb-2">
+    <div class="input-group input-group-sm">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Search for</span>
+      </div>
+      <div class="selectbox" id="selct6">
+        <div class="selection" id="selection6" onclick="Select6()">
+            <div class="contenido-select">
+              <span class="texto">Seleccione...</span>
+            </div>
+            <i class="icon icon-angle-down ml-3"></i>
+        </div>
+         <div class="opciones" id="opciones6">
+           <a class="opcion" *ngFor="let item of miArray1" onclick="CloseSelect6()">
+             <div class="contenido-opcion" id="opcionSelect">
+                <span class="texto">{{item}}</span>
+             </div>
+            </a>
+         </div> 
+      </div>  
+      <input type="hidden" #selected3 id="inputSelect" value=""/>    
+    </div>   
+  
+    <button id="btn-Close" class="btn btn-sm btn-round btn-1 ml-1">
+      <i class="icon icon-refresh ml-2 mr-2"></i>
+      <span class="inp-text mr-2">Reset</span>
+    </button>
+  </div>
+
+  <div id="tabla">
+    <table class="table table-hover table-bordered table-sm">
+      <thead class="bg-white">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Date</th>
+          <th scope="col">Entry</th>
+          <th scope="col">Departure</th>
+          <th scope="col">Lunch Departure</th>
+          <th scope="col">Lunch Ticket</th>
+          <th scope="col">Time Record</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>          
+          <td>Mark Gonzales</td>
+          <td>jueves, 18 de junio de 2020</td>
+          <td>6:00:38 a.m.</td>
+          <td>2:02:51 p.m.</td>
+          <td>10:02:11 a.m.</td>
+          <td>10:14:29 a.m.</td>
+          <td>08:02:13</td>
+        </tr>
+        <tr>          
+          <td>Mark Gonzales</td>
+          <td>jueves, 18 de junio de 2020</td>
+          <td>6:00:38 a.m.</td>
+          <td>2:02:51 p.m.</td>
+          <td>10:02:11 a.m.</td>
+          <td>10:14:29 a.m.</td>
+          <td>08:02:13</td>
+        </tr>
+        <tr>          
+          <td>Mark Gonzales</td>
+          <td>jueves, 18 de junio de 2020</td>
+          <td>6:00:38 a.m.</td>
+          <td>2:02:51 p.m.</td>
+          <td>10:02:11 a.m.</td>
+          <td>10:14:29 a.m.</td>
+          <td>08:02:13</td>
+        </tr>
+        <tr>          
+          <td>Mark Gonzales</td>
+          <td>jueves, 18 de junio de 2020</td>
+          <td>6:00:38 a.m.</td>
+          <td>2:02:51 p.m.</td>
+          <td>10:02:11 a.m.</td>
+          <td>10:14:29 a.m.</td>
+          <td>08:02:13</td>
+        </tr>
+        <tr>          
+          <td>Mark Gonzales</td>
+          <td>jueves, 18 de junio de 2020</td>
+          <td>6:00:38 a.m.</td>
+          <td>2:02:51 p.m.</td>
+          <td>10:02:11 a.m.</td>
+          <td>10:14:29 a.m.</td>
+          <td>08:02:13</td>
+        </tr>
+        <tr>          
+          <td>Mark Gonzales</td>
+          <td>jueves, 18 de junio de 2020</td>
+          <td>6:00:38 a.m.</td>
+          <td>2:02:51 p.m.</td>
+          <td>10:02:11 a.m.</td>
+          <td>10:14:29 a.m.</td>
+          <td>08:02:13</td>
+        </tr>
+        <tr>          
+          <td>Mark Gonzales</td>
+          <td>jueves, 18 de junio de 2020</td>
+          <td>6:00:38 a.m.</td>
+          <td>2:02:51 p.m.</td>
+          <td>10:02:11 a.m.</td>
+          <td>10:14:29 a.m.</td>
+          <td>08:02:13</td>
+        </tr>
+      </tbody>
+    </table>      
+  </div> 
+</div>

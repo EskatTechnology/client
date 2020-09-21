@@ -19,11 +19,14 @@ import { A_EmpresaComponent } from './components/appAdmin/a_empresa/a_empresa.co
 
 import { P_MainComponent } from './components/appPersonal/p_main/p_main.component'
 import { P_EmployeesComponent } from './components/appPersonal/p_employees/p_employees.component'
+import { P_TurnosComponent } from './components/appPersonal/p_turnos/p_turnos.component'
+import { P_RegistrosComponent } from './components/appPersonal/p_registros/p_registros.component'
 
 //Services
 import { TokenInterceptorService } from './lib/token-interceptor.service';
 import { LoginService } from '../app/services/login.service'
 import { AppMensajeriaService } from './services/appMensajeria.service';
+import { from } from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,9 @@ import { AppMensajeriaService } from './services/appMensajeria.service';
     A_GruposComponent,
     A_EmpresaComponent,
     P_MainComponent,
-    P_EmployeesComponent
+    P_EmployeesComponent,
+    P_TurnosComponent,
+    P_RegistrosComponent
   ],
   imports: [
     BrowserModule,

@@ -60,21 +60,21 @@
           <span class="input-group-text">Group</span>
         </div>       
         <div class="selectbox">
-          <div class="selection" id="selections" onclick="Selected()">
+          <div class="selection" id="selection2" onclick="Select2()">
               <div class="contenido-select">
                 <span class="texto">Seleccione...</span>
               </div>
               <i class="icon icon-angle-down ml-3"></i>
           </div>
-           <div class="opciones" id="opcioness">
-             <a class="opcion" *ngFor="let item of miArray" onclick="CloseSelects()">
+           <div class="opciones" id="opciones2">
+             <a class="opcion" *ngFor="let item of miArray" onclick="CloseSelect2()">
                <div class="contenido-opcion" id="opcionSelect">
                   <span class="texto">{{item}}</span>
                </div>
               </a>
            </div> 
         </div>  
-        <input type="hidden" #selected id="inputSelect" value=""/>  
+        <input type="hidden" #selected2 id="inputSelect" value=""/>  
       </div>
       <button id="btn-Close" class="btn btn-sm btn-round btn-3 mt-1 ml-auto">
         <span class="inp-text">Create Charge</span>

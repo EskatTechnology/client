@@ -1,0 +1,104 @@
+@import url('../p_styles.css');
+
+.selectbox{
+    width: 10em;
+}
+
+.opciones{
+    width: 10em;
+}
+
+#btnConfig{
+    width: 4em;
+}
+#btnConfig>span{
+    display: none;
+}
+
+#tabla{
+    width: 100%;
+    height: calc(100vh - 21em);
+    overflow: scroll;
+}
+
+thead #head1 th {
+    position: sticky;
+    top: 0;
+    height: 2.1em;
+    background-color: white;
+    color: var(--color-Red);
+    text-align: center;  
+    box-shadow: 0 0 0 1px #dee2e6; 
+}
+
+thead #head2 th {
+    position: sticky;
+    top: 2.1em;
+    background-color: var(--color-Red);
+    color: white;
+    text-align: center;  
+    box-shadow: 0 0 0 1px #dee2e6; 
+}
+
+.table tbody tr td{
+    text-align: center; 
+    vertical-align: middle;
+}
+
+.form-control:focus,
+.form-control:active{
+    outline: none;
+    box-shadow: none;
+}
+.indice{
+    font-size: 0.7em;
+}
+.turno1{
+    background-color: #90CAF9;
+    border: 1px solid #90CAF9;
+}
+.turno2{
+    background-color: #AED581;
+    border: 1px solid #AED581;
+}
+.turno3{
+    background-color: #FFD54F;
+    border: 1px solid #FFD54F;
+}
+.turno4{
+    background-color: #CE93D8;
+    border: 1px solid #CE93D8;
+}
+.noTurno{
+    border: 1px solid black;
+}
+.permiso{
+    background-color: #D50000;
+    border: 1px solid #D50000;
+    color: white;
+}
+
+@media screen and (min-width: 576px){
+    #btnConfig{
+        width: 12em;
+    }
+    #btnConfig>span{
+        margin-left: 0.5em;
+        display: inline-block;
+    }
+    #tabla{
+        height: calc(100vh - 8em);
+    }
+    #main{
+        overflow: scroll;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #main{
+        overflow: visible;
+    }
+    #tabla{
+        height: calc(100vh - 21em);
+    }
+}

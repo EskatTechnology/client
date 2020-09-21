@@ -21,7 +21,7 @@ section{
     border: 1px solid var(--color-SteelBlue);
     border-top-left-radius: 1em;
     border-bottom-left-radius: 1em;
-    width: 45%;
+    width: 42%; 
 }
 .input-group-text {
     color: #ffffff;
@@ -100,5 +100,8 @@ section{
     }
     #bottom> .table{
         width: 60%;
+    }
+    .input-group-prepend{
+        padding-left: 1em;
     }
 }

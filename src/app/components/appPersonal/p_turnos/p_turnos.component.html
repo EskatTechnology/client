@@ -1,0 +1,184 @@
+<div class="d-flex justify-content-center align-items-center">
+  <h1>Shifts</h1>
+</div>
+<div id="main">
+  <div class="d-flex mb-2">
+    <div class="input-group input-group-sm">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Group</span>
+      </div>
+      <div class="selectbox">
+        <div class="selection" id="selection4" onclick="Select4()">
+            <div class="contenido-select">
+              <span class="texto">Seleccione...</span>
+            </div>
+            <i class="icon icon-angle-down ml-3"></i>
+        </div>
+         <div class="opciones" id="opciones4">
+           <a class="opcion" *ngFor="let item of miArray" onclick="CloseSelect4()">
+             <div class="contenido-opcion" id="opcionSelect">
+                <span class="texto">{{item}}</span>
+             </div>
+            </a>
+         </div> 
+      </div>  
+      <input type="hidden" #selected3 id="inputSelect" value=""/>    
+    </div>   
+    <button id="btnConfig" class="btn btn-sm btn-round btn-1 ml-auto">
+      <i class="icon icon-cogs"></i>
+      <span class="mr-2">Modify Shifts</span>
+    </button>
+  </div>
+  <div id="tabla">
+    <table class="table table-hover table-bordered table-sm">
+      <thead class="bg-white">
+        <tr id="head1">
+          <th scope="col"></th>
+          <th scope="col">MONDAY</th>
+          <th scope="col">TUESDAY</th>
+          <th scope="col">WEDNESDAY</th>
+          <th scope="col">THURSDAY</th>
+          <th scope="col">FRIDAY</th>
+          <th scope="col">SATURDAY</th>
+          <th scope="col">SUNDAY</th>
+          <th scope="col"></th>
+        </tr>
+        <tr id="head2">
+          <th scope="col">Name</th>
+          <th scope="col">21/09/2020</th>
+          <th scope="col">22/09/2020</th>
+          <th scope="col">23/09/2020</th>
+          <th scope="col">24/09/2020</th>
+          <th scope="col">25/09/2020</th>
+          <th scope="col">26/09/2020</th>
+          <th scope="col">27/09/2020</th>
+          <th scope="col"></th>
+        </tr>      
+      </thead>
+      <tbody>
+        <tr>         
+          <td>Mark Gonzales</td>
+          <td> 
+            <select class="form-control form-control-sm" id="select1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </td>
+          <td> 
+            <select class="form-control form-control-sm" id="select1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </td>
+          <td> 
+            <select class="form-control form-control-sm" id="select1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </td>
+          <td> 
+            <select class="form-control form-control-sm" id="select1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </td>
+          <td> 
+            <select class="form-control form-control-sm" id="select1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </td>
+          <td> 
+            <select class="form-control form-control-sm" id="select1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </td>
+          <td> 
+            <select class="form-control form-control-sm" id="select1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </td>
+          <td>
+            <button class="btn btn-sm btn-1">
+              <i class="icon icon-calendar1"></i>
+            </button>
+          </td>
+        </tr>        
+      </tbody>
+    </table>       
+  </div> 
+  <nav aria-label="Page navigation example">
+    <ul class="pagination pagination-sm justify-content-center">
+      <li class="page-item">
+        <a class="page-link">
+          <i class="icon icon-angle-left text-danger"></i>
+        </a>
+      </li>
+      <li class="page-item disabled">
+        <a class="page-link">Date</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link">
+          <i class="icon icon-angle-right text-danger"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>   
+  <div>
+    <table class="indice table-sm">      
+      <tbody>
+        <tr>         
+          <td class="turno1">1</td>
+          <td>06:30 - 14:30</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>     
+        <tr>         
+          <td class="turno2">2</td>
+          <td>07:30 - 17:00</td>
+          <td></td>
+          <td class="noTurno">0</td>
+          <td>No Shift</td>
+        </tr>     
+        <tr>         
+          <td class="turno3">3</td>
+          <td>00:00 - 00:00</td>
+          <td></td>
+          <td class="permiso">P</td>
+          <td>Permiss</td>
+        </tr>   
+        <tr>         
+          <td class="turno4">4</td>
+          <td>00:00 - 00:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>       
+      </tbody>
+    </table>       
+  </div> 
+</div>

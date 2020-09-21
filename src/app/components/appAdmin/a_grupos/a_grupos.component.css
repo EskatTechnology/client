@@ -61,12 +61,15 @@ thead tr th {
   vertical-align: middle;
 }
 .selectbox{
-  width: 10em !important;
+  width: 12em !important;
 }
 .opciones{
-  width: 10em !important;
+  width: 12em !important;
 }
 
+.input-group-prepend{
+  width: 4em !important;
+}
 
 @media screen and (min-width: 768px){
   #main{

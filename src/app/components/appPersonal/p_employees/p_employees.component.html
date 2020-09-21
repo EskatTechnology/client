@@ -9,21 +9,21 @@
         <span class="input-group-text">Group</span>
       </div>
       <div class="selectbox">
-        <div class="selection" id="selection" onclick="Select()">
+        <div class="selection" id="selection3" onclick="Select3()">
             <div class="contenido-select">
               <span class="texto">Seleccione...</span>
             </div>
             <i class="icon icon-angle-down ml-3"></i>
         </div>
-         <div class="opciones" id="opciones">
-           <a class="opcion" *ngFor="let item of miArray" onclick="CloseSelect()">
+         <div class="opciones" id="opciones3">
+           <a class="opcion" *ngFor="let item of miArray" onclick="CloseSelect3()">
              <div class="contenido-opcion" id="opcionSelect">
                 <span class="texto">{{item}}</span>
              </div>
             </a>
          </div> 
       </div>  
-      <input type="hidden" #selected id="inputSelect" value=""/>    
+      <input type="hidden" #selected3 id="inputSelect" value=""/>    
     </div>   
   </div>
   <div class="d-flex mb-2">
@@ -33,7 +33,7 @@
       </div>
       <input type="text" #texto class="form-control form-control-radius" required> 
     </div>
-    <button id="btn-Close" class="btn btn-sm btn-round btn-1 ml-1" (click)="Buscar(selected.value)">
+    <button id="btn-Close" class="btn btn-sm btn-round btn-1 ml-1" (click)="Buscar(selected3.value)">
       <i class="icon icon-search ml-2 mr-2"></i>
       <span class="inp-text mr-2">Search</span>
     </button>
