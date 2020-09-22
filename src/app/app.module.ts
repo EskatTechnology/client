@@ -21,12 +21,16 @@ import { P_MainComponent } from './components/appPersonal/p_main/p_main.componen
 import { P_EmployeesComponent } from './components/appPersonal/p_employees/p_employees.component'
 import { P_TurnosComponent } from './components/appPersonal/p_turnos/p_turnos.component'
 import { P_RegistrosComponent } from './components/appPersonal/p_registros/p_registros.component'
+import { P_PermisosComponent } from './components/appPersonal/permisos/p_permisos/p_permisos.component'
+import { P_Permisos1Component } from './components/appPersonal/permisos/p_permisos1/p_permisos1.component'
+import { P_Permisos2Component } from './components/appPersonal/permisos/p_permisos2/p_permisos2.component'
 
 //Services
 import { TokenInterceptorService } from './lib/token-interceptor.service';
 import { LoginService } from '../app/services/login.service'
 import { AppMensajeriaService } from './services/appMensajeria.service';
 import { from } from 'rxjs';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -40,7 +44,10 @@ import { from } from 'rxjs';
     P_MainComponent,
     P_EmployeesComponent,
     P_TurnosComponent,
-    P_RegistrosComponent
+    P_RegistrosComponent,
+    P_PermisosComponent,
+    P_Permisos1Component, 
+    P_Permisos2Component
   ],
   imports: [
     BrowserModule,
@@ -57,7 +64,7 @@ import { from } from 'rxjs';
         deps: [ HttpClient ]
       }
     }), 
-    FormsModule
+    FormsModule, NgbModule
   ],
   providers: [
     {

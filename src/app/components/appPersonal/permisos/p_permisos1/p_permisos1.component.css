@@ -1,0 +1,92 @@
+@import url('../../p_styles.css');
+
+#bg-rojo{
+    background-color: var(--color-Red);
+    color: white;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;  
+    height: calc(100vh - 12em);  
+    overflow: auto;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;  
+}
+
+#left{
+    width: 100%;
+    height: 11em;
+    overflow: auto;
+}
+
+#right{
+    width: 100%;
+}
+
+.selectbox{
+    width: 10em !important;
+}
+
+.opciones{
+    width: 10em !important;
+}
+
+#tabla{
+    width: 100%;
+}
+
+thead tr th {     
+    background-color: var(--color-Red);
+    color: white;
+    text-align: center;  
+    position: sticky;
+    top: 0;
+    z-index: 10;  
+    box-shadow: 0 0 0 1px #dee2e6; 
+}
+
+.table tbody tr td{
+    text-align: center; 
+    vertical-align: middle;
+}
+textarea{
+    border-radius: 0.5em !important;
+    border-color: var(--color-Red);
+    border-top-left-radius: 0 !important;
+}
+#comment{
+    background-color: var(--color-Red);
+    padding: 0.1em 0.27em;
+    color: white;
+    margin: 0;
+    border-top-left-radius: 0.5em ;
+    border-top-right-radius: 0.5em ;
+}
+
+.border-red:focus,
+.border-red:active{
+    box-shadow: none;
+    border-color: var(--color-Red);
+}
+
+@media screen and (min-width: 768px){
+    .main{ 
+        overflow: auto;
+    }
+    .contenedor{
+        flex-direction: row;  
+    }
+    #left{
+        width: 50%;
+        height: auto;
+        overflow: auto;
+        margin-right: 1em;
+    }
+    
+    #right{
+        width: 50%;
+    }
+}
