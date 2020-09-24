@@ -301,6 +301,37 @@ function CloseSelect9(){
 }
 
 
+function Select10(){
+  const opciones = document.querySelector('#opciones10'); 
+  opciones.classList.toggle('active');   
+  
+  const contenidoSelect = document.querySelector('#selection10 .contenido-select');
+  const hiddenInput = document.querySelector('#inputSelect');
+
+  document.querySelectorAll('#opciones10 > .opcion').forEach((opcion) => {
+    opcion.addEventListener('click', (e) => {
+      e.preventDefault();
+      contenidoSelect.innerHTML = e.currentTarget.innerHTML;
+      hiddenInput.value = e.currentTarget.querySelector('.texto').innerText;
+      //console.log(hiddenInput.value)
+    });
+  });
+
+  event.stopPropagation(); 
+
+  $(document).one('click', function (e) { 
+    if(!$(e.target).is('#opciones10')) { 
+      if($("#opciones10").hasClass("active")){
+        CloseSelect10()
+      }
+    } 
+  }); 
+}
+
+function CloseSelect10(){
+  const opciones = document.querySelector('#opciones10'); 
+  opciones.classList.toggle('active'); 
+}
 
 
 

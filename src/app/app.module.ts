@@ -24,6 +24,9 @@ import { P_RegistrosComponent } from './components/appPersonal/p_registros/p_reg
 import { P_PermisosComponent } from './components/appPersonal/permisos/p_permisos/p_permisos.component'
 import { P_Permisos1Component } from './components/appPersonal/permisos/p_permisos1/p_permisos1.component'
 import { P_Permisos2Component } from './components/appPersonal/permisos/p_permisos2/p_permisos2.component'
+import { P_GpsComponent } from './components/appPersonal/gps/p_gps/p_gps.component'
+import { P_Gps1Component } from './components/appPersonal/gps/p_gps1/p_gps1.component'
+import { P_Gps2Component } from './components/appPersonal/gps/p_gps2/p_gps2.component'
 
 //Services
 import { TokenInterceptorService } from './lib/token-interceptor.service';
@@ -31,6 +34,7 @@ import { LoginService } from '../app/services/login.service'
 import { AppMensajeriaService } from './services/appMensajeria.service';
 import { from } from 'rxjs';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -47,7 +51,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     P_RegistrosComponent,
     P_PermisosComponent,
     P_Permisos1Component, 
-    P_Permisos2Component
+    P_Permisos2Component,
+    P_GpsComponent,
+    P_Gps1Component,
+    P_Gps2Component
   ],
   imports: [
     BrowserModule,
@@ -64,7 +71,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
         deps: [ HttpClient ]
       }
     }), 
-    FormsModule, NgbModule
+    FormsModule,
+    NgbModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCTlgjYXSfzYzUkN7RTr3Ja30r_wB6h-rs'
+    })
   ],
   providers: [
     {
