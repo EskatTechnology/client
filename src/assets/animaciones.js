@@ -334,4 +334,68 @@ function CloseSelect10(){
 }
 
 
+function Select11(){
+  const opciones = document.querySelector('#opciones11'); 
+  opciones.classList.toggle('active');   
+  
+  const contenidoSelect = document.querySelector('#selection11 .contenido-select');
+  const hiddenInput = document.querySelector('#inputSelect');
+
+  document.querySelectorAll('#opciones11 > .opcion').forEach((opcion) => {
+    opcion.addEventListener('click', (e) => {
+      e.preventDefault();
+      contenidoSelect.innerHTML = e.currentTarget.innerHTML;
+      hiddenInput.value = e.currentTarget.querySelector('.texto').innerText;
+      //console.log(hiddenInput.value)
+    });
+  });
+
+  event.stopPropagation(); 
+
+  $(document).one('click', function (e) { 
+    if(!$(e.target).is('#opciones11')) { 
+      if($("#opciones11").hasClass("active")){
+        CloseSelect11()
+      }
+    } 
+  }); 
+}
+
+function CloseSelect11(){
+  const opciones = document.querySelector('#opciones11'); 
+  opciones.classList.toggle('active'); 
+}
+
+
+function Select12(){
+  const opciones = document.querySelector('#opciones12'); 
+  opciones.classList.toggle('active');   
+  
+  const contenidoSelect = document.querySelector('#selection12 .contenido-select');
+  const hiddenInput = document.querySelector('#inputSelect');
+
+  document.querySelectorAll('#opciones12 > .opcion').forEach((opcion) => {
+    opcion.addEventListener('click', (e) => {
+      e.preventDefault();
+      contenidoSelect.innerHTML = e.currentTarget.innerHTML;
+      hiddenInput.value = e.currentTarget.querySelector('.texto').innerText;
+      //console.log(hiddenInput.value)
+    });
+  });
+
+  event.stopPropagation(); 
+
+  $(document).one('click', function (e) { 
+    if(!$(e.target).is('#opciones12')) { 
+      if($("#opciones12").hasClass("active")){
+        CloseSelect12()
+      }
+    } 
+  }); 
+}
+
+function CloseSelect12(){
+  const opciones = document.querySelector('#opciones12'); 
+  opciones.classList.toggle('active'); 
+}
 

@@ -27,6 +27,7 @@ import { P_Permisos2Component } from './components/appPersonal/permisos/p_permis
 import { P_GpsComponent } from './components/appPersonal/gps/p_gps/p_gps.component'
 import { P_Gps1Component } from './components/appPersonal/gps/p_gps1/p_gps1.component'
 import { P_Gps2Component } from './components/appPersonal/gps/p_gps2/p_gps2.component'
+import { P_TaskComponent } from './components/appPersonal/p_task/p_task.component'
 
 //Services
 import { TokenInterceptorService } from './lib/token-interceptor.service';
@@ -54,7 +55,8 @@ import { AgmCoreModule } from '@agm/core';
     P_Permisos2Component,
     P_GpsComponent,
     P_Gps1Component,
-    P_Gps2Component
+    P_Gps2Component,
+    P_TaskComponent
   ],
   imports: [
     BrowserModule,

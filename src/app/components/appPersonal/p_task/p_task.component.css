@@ -1,0 +1,113 @@
+@import url('../p_styles.css');
+
+.selectbox{
+    width: 10em;
+}
+.opciones{
+    width: 10em;
+}
+
+.div-opc{
+    display: flex;
+    height: 2em;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.card-body{
+    overflow: auto;
+}
+
+.card-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    color: white;
+}
+
+.header1{
+    background-color: #A9A9A9;
+}
+
+.header2{
+    background-color: #4682B4;
+}
+
+.header3{
+    background-color: #A52A2A;
+}
+
+.header4{
+    background-color: #008000;
+}
+
+.card-body{
+    background-color: #F0F0F0;
+}
+.border-red:focus,
+.border-red:active{
+    box-shadow: none;
+    border-color: var(--color-Red);
+}
+
+.button{
+    padding: 0;
+    border: none;
+    border-radius: 0.17em;
+    height: 24px;
+    width: 24px;
+    margin-right: 0.17em;
+}
+.div-main{
+    background-color: rgba(54, 209, 201, 0.5);
+    border-radius: 0.3em;
+}
+.div-body{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.15em;
+}
+
+@media screen and (min-width: 577px){
+    .div-opciones{
+        display: flex;
+    }
+    #calendar{
+        width: 10em;
+    }
+    .cards{
+        flex-direction: row;
+    }
+    .cards .card{
+        width: 50%;
+    }
+    .cards> .card1{
+        margin-right: 0.5em;
+    }
+    
+    
+}
+@media screen and (min-width: 769px){
+    #main{
+        flex-direction: row;
+    }
+    .card2{
+        margin-right: 0.5em;
+    }
+    .cards .card{
+        width: 50%;
+    }
+    .card{
+        height: calc(100vh - 11.7em);
+    }
+    
+}
