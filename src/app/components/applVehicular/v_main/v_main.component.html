@@ -1,0 +1,62 @@
+<div class="main">
+  <div class="header-nav">
+    <button id="btnMenu" class="btn-icon" type="button" data-target="#navContent" onclick="BtnMenu()">
+      <span class="icon-bars"></span>
+    </button>
+    <a class="nav-bar" href="/vehicular">Vehicle Control</a>
+    <button id="btn-Close" class="ml-auto" data-toggle="tooltip" title="Settings">
+      <i class="icon icon-settings"></i>
+  </button>
+    <button id="btn-Close" (click)="Cerrar()">
+      <i class="icon icon-close"></i>
+  </button>
+  </div>
+  <div id="container">
+    <div id="navContent">
+      <nav> 
+        <div class="nav" id="nav-tab" role="tablist">
+          <a class="itemNav" id="nav-employee-tab" data-toggle="tab" href="#nav-employee" role="tab" aria-controls="nav-employee" aria-selected="false" onclick="MenuCollapse()">
+            <img src="../../../../assets/images/Personal.png" class="mr-2"/>Staff</a>
+          <a class="itemNav" id="nav-routes-tab" data-toggle="tab" href="#nav-routes" role="tab" aria-controls="nav-routes" aria-selected="false" onclick="MenuCollapse()">
+            <img src="../../../../assets/images/Gps.png" class="mr-2"/>Routes</a>
+          <a class="itemNav" id="nav-check-tab" data-toggle="tab" href="#nav-check" role="tab" aria-controls="nav-check" aria-selected="false" onclick="MenuCollapse()">
+            <img src="../../../../assets/images/Buscar.png" class="mr-2"/>Check</a>
+            <a class="itemNav" id="nav-permissions-tab" data-toggle="tab" href="#nav-permissions" role="tab" aria-controls="nav-permissions" aria-selected="false" onclick="MenuCollapse()">
+              <img src="../../../../assets/images/Permisos.png" class="mr-2"/>Permissions</a>
+            <a class="itemNav" id="nav-mante-tab" data-toggle="tab" href="#nav-mante" role="tab" aria-controls="nav-mante" aria-selected="false" onclick="MenuCollapse()">
+              <img src="../../../../assets/images/Config.png" class="mr-2"/>Maintenance</a>           
+        </div>
+      </nav>
+      <div id="panel">
+
+      </div>
+    </div>
+  
+    <main class="">
+    <div class="tab-content p-2" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div id="home" class="d-flex flex-column justify-content-center align-items-center">
+            <img src="../../../../assets/images/LogoEskat.png" width="80%"/>
+            <h3 class="font-weight-bold mt-3">Vehicle Control</h3>
+            <h6>www.eskat-usa.com</h6>
+          </div>         
+        </div>
+        <div class="tab-pane fade" id="nav-employee" role="tabpanel" aria-labelledby="nav-employee-tab">      
+          <app-v_personal></app-v_personal>
+        </div>
+        <div class="tab-pane fade" id="nav-routes" role="tabpanel" aria-labelledby="nav-routes-tab">
+          
+        </div>
+        <div class="tab-pane fade" id="nav-check" role="tabpanel" aria-labelledby="nav-check-tab">
+          
+        </div>
+        <div class="tab-pane fade" id="nav-permissions" role="tabpanel" aria-labelledby="nav-permissions-tab">
+          
+        </div>
+        <div class="tab-pane fade" id="nav-mante" role="tabpanel" aria-labelledby="nav-mante-tab">
+          
+        </div>      
+      </div>
+    </main>
+  </div>
+</div>

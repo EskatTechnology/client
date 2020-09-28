@@ -5,6 +5,11 @@ function BtnMenu(){
 function MenuCollapse(){
   $('#navContent').hide()
 }
+/*
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})*/
+
 
 function Select1(){
   //const select = document.querySelector('#selection');      

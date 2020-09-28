@@ -75,4 +75,8 @@ export class HomeComponent implements OnInit {
   Personal(){
     this.router.navigate(['/personal']);
   }
+
+  Vehicular(){
+    this.router.navigate(['/vehicular']);
+  }
 }

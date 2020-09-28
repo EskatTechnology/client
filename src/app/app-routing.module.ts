@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AuthGuard } from './lib/auth.guard';
 import { LoginComponent } from '../app/components/login/login.component';
 import { HomeComponent } from '../app/components/home/home.component';
 import { A_MainComponent } from '../app/components/appAdmin/a_main/a_main.component'
 import { P_MainComponent } from '../app/components/appPersonal/p_main/p_main.component'
-import { AuthGuard } from './lib/auth.guard';
+import { V_MainComponent } from './components/applVehicular/v_main/v_main.component';
+
+
 
 const routes: Routes = [
   {
@@ -29,6 +32,11 @@ const routes: Routes = [
   {
     path: 'personal',
     component: P_MainComponent,
+    //canActivate:[AuthGuard]
+  },
+  {
+    path: 'vehicular',
+    component: V_MainComponent,
     //canActivate:[AuthGuard]
   },
 ];
