@@ -1,3 +1,143 @@
-<p>
-  v_personal works!
-</p>
+<div class="d-flex justify-content-center align-items-center">
+  <h1>Staff</h1>
+</div>
+<div id="main">
+  <div class="d-flex mb-2">
+    <div class="input-group input-group-sm">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Group</span>
+      </div>
+      <div class="selectbox">
+        <div class="selection" id="selection1" onclick="Select1()">
+            <div class="contenido-select">
+              <span class="texto">Seleccione...</span>
+            </div>
+            <i class="icon icon-angle-down ml-3"></i>
+        </div>
+         <div class="opciones" id="opciones1">
+           <a class="opcion" *ngFor="let item of miArray" onclick="CloseSelect1()">
+             <div class="contenido-opcion" id="opcionSelect">
+                <span class="texto">{{item}}</span>
+             </div>
+            </a>
+         </div> 
+      </div>  
+      <input type="hidden" #selected3 id="inputSelect" value=""/>    
+    </div>   
+  </div>
+  <div id="div" class="d-flex mb-2">
+    <div class="input-group input-group-sm w-auto">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Search for</span>
+      </div>
+      <div class="selectbox" id="selct6">
+        <div class="selection" id="selection2" onclick="Select2()">
+            <div class="contenido-select">
+              <span class="texto">Seleccione...</span>
+            </div>
+            <i class="icon icon-angle-down ml-3"></i>
+        </div>
+         <div class="opciones" id="opciones2">
+           <a class="opcion" *ngFor="let item of miArray" onclick="CloseSelect2()">
+             <div class="contenido-opcion" id="opcionSelect">
+                <span class="texto">{{item}}</span>
+             </div>
+            </a>
+         </div> 
+      </div>  
+      <input type="hidden" #selected3 id="inputSelect" value=""/>       
+    </div>   
+    <div id="div2" class="d-flex">
+      <input type="text" #texto class="form-text" title="" required> 
+      <button class="btn btn-sm btn-round btn-1 ml-1">
+        <i class="icon icon-search ml-2 mr-2"></i>
+        <span class="inp-text mr-2">Search</span>
+      </button>   
+      <button class="btn btn-sm btn-round btn-1 ml-1">
+        <i class="icon icon-refresh ml-2 mr-2"></i>
+        <span class="inp-text mr-2">Reset</span>
+      </button>   
+    </div>    
+  </div>
+  <div id="tabla">
+    <table class="table table-hover table-bordered table-sm">
+      <thead class="bg-white">
+        <tr>
+          <th scope="col">Vehice</th>
+          <th scope="col">Name</th>
+          <th scope="col">Charge</th>
+          <th scope="col">Phone</th>
+          <th scope="col">GPS</th>
+          <th scope="col">Edit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">Mazda</td>
+          <td>Mark Gonzales</td>
+          <td>Conductor</td>
+          <td>320541265</td>
+          <td width="1em">
+            <button class="btn btn-sm btn-round btn-1 ml-1 p-0">
+              <i class="icon icon-gps_fixed ml-2 mr-2"></i>
+            </button>   
+          </td>
+          <td width="1em">
+            <button class="btn btn-sm btn-round btn-1 ml-1 p-0">
+              <i class="icon icon-pencil ml-2 mr-2"></i>
+            </button>   
+          </td>
+        </tr>
+        <tr>
+          <td scope="row">Mazda</td>
+          <td>Mark Gonzales</td>
+          <td>Conductor</td>
+          <td>320541265</td>
+          <td width="1em">
+            <button class="btn btn-sm btn-round btn-1 ml-1 p-0">
+              <i class="icon icon-gps_fixed ml-2 mr-2"></i>
+            </button>   
+          </td>
+          <td width="1em">
+            <button class="btn btn-sm btn-round btn-1 ml-1 p-0">
+              <i class="icon icon-pencil ml-2 mr-2"></i>
+            </button>   
+          </td>
+        </tr>
+        <tr>
+          <td scope="row">Mazda</td>
+          <td>Mark Gonzales</td>
+          <td>Conductor</td>
+          <td>320541265</td>
+          <td width="1em">
+            <button class="btn btn-sm btn-round btn-1 ml-1 p-0">
+              <i class="icon icon-gps_fixed ml-2 mr-2"></i>
+            </button>   
+          </td>
+          <td width="1em">
+            <button class="btn btn-sm btn-round btn-1 ml-1 p-0">
+              <i class="icon icon-pencil ml-2 mr-2"></i>
+            </button>   
+          </td>
+        </tr>
+        <tr>
+          <td scope="row">Mazda</td>
+          <td>Mark Gonzales</td>
+          <td>Conductor</td>
+          <td>320541265</td>
+          <td width="1em">
+            <button class="btn btn-sm btn-round btn-1 ml-1 p-0">
+              <i class="icon icon-gps_fixed ml-2 mr-2"></i>
+            </button>   
+          </td>
+          <td width="1em">
+            <button class="btn btn-sm btn-round btn-1 ml-1 p-0">
+              <i class="icon icon-pencil ml-2 mr-2"></i>
+            </button>   
+          </td>
+        </tr>        
+      </tbody>
+    </table>      
+  </div> 
+</div>
+

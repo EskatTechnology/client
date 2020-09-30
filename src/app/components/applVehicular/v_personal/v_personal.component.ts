@@ -9,6 +9,12 @@ export class V_PersonalComponent implements OnInit {
 
   constructor() { }
 
+  miArray: string[] = [
+    "Staff",    
+    "Vehicle",
+    "Trailers"    
+  ];
+
   ngOnInit() {
   }
 

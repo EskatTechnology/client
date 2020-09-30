@@ -102,24 +102,7 @@
   .show > .btn-2.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(84, 156, 216, 0.5); /*igual al color hover*/
   }
-
-  .btn-tab{
-    border-top-left-radius: 0.7em;
-    border-top-right-radius: 0.7em;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-  .btn-tab:not(:disabled):not(.disabled):active, .btn-tab:not(:disabled):not(.disabled).active,
-    .show > .btn-tab.dropdown-toggle {
-    color: var(--color-Font);
-    background-color: dimgray !important;
-    border-color:dimgray !important;
-    }
-    
-  .btn-tab:not(:disabled):not(.disabled):active:focus, .btn-tab:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-tab.dropdown-toggle:focus {
-      box-shadow: none; /*igual al color hover*/
-    }
+ 
   
   .btn-3 {
     color: var(--color-Font);

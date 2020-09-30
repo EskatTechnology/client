@@ -3,40 +3,39 @@
 #main{
     height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
 }
+
 #left{
     background: #2c3e50;
     background: -webkit-linear-gradient(to right, #2c3e50, #3498db);
-    background: linear-gradient(to right, #2c3e50, #3498db);
-    
+    background: linear-gradient(to right, #2c3e50, #3498db);    
     height: 35%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
 #left img{
     width: 70%;
 }
+
 #right{
     background-color: rgb(241, 242, 245);
     height: 65%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
+
 #r-div{
-    display: flex;
-    flex-direction: column;
     width: 70%;
 }
 
 h1{
     font-size: 1.5em;
 } 
+.input-text{
+    border-color: #ced4da;
+}
+.input-text.ng-valid.ng-touched{
+    border-color: #ced4da;
+}
 
 @media screen and (min-width:576px){
     #main{
@@ -69,7 +68,3 @@ h1{
         font-size: 2.5em;
     }
 }
-
-.alert-conexion{
-    background-color: red;
-  }

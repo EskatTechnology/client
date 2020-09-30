@@ -18,6 +18,9 @@
     --color-Vehicular-Hover: #21527B;
     --color-Reportes: #8C5AD6;
     --color-Reportes-Hover: #AD84DE;
+
+    --color-BlueDark: #233656 !important;
+    --color-Blue-hover: #415B76 !important;   
 }
 
 *{
@@ -32,6 +35,181 @@ body{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
+.white{
+  color: white;
+}
+
+.flx{
+  display: flex;
+}
+
+.flx-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flx-column{
+  flex-direction: column;
+}
+
+.flx-row{
+  flex-direction: row;
+}
+
+.p1 {
+  padding: 0.25rem !important;
+}
+
+.p2 {
+  padding: 0.5rem !important;
+}
+
+.p3 {
+  padding: 0.75rem !important;
+}
+
+.m1 {
+  margin: 0.25rem !important;
+}
+
+.m2 {
+  margin: 0.5rem !important;
+}
+
+.m3 {
+  margin: 0.75rem !important;
+}
+
+.input-text{
+  outline: none;
+  border: 1px solid;
+  border-radius: calc(1.5em + 0.5rem + 2px);
+  height: calc(1.5em + 0.5rem + 2px);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  margin: 0rem 0rem 0.5rem 0rem;
+  color: #495057;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input-text.ng-invalid.ng-touched{
+  border-color: rgba(255, 0, 0, 0.5);
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23dc3545' viewBox='0 0 12 12'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.input-text.ng-valid.ng-touched{
+  border: 1px solid;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.button{
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle; 
+  background-color: transparent; 
+  border: 1px solid transparent;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 1rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  outline: none;
+  box-shadow: none;
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+.button:focus, .button.focus {
+  outline: none;
+}
+
+.button.disabled, .button:disabled {
+  opacity: 0.65;
+}
+
+.button:not(:disabled):not(.disabled):active:focus, .button:not(:disabled):not(.disabled).active:focus,
+.show > .button.dropdown-toggle:focus {
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.btn1 {
+  color: var(--color-Font);
+  background-color: var(--color-SteelBlue);
+  border-color: var(--color-SteelBlue);
+}
+  
+.btn1:hover {
+  background-color:var(--color-SteelBlue-hover);
+  border-color: var(--color-SteelBlue-hover);
+}
+  
+.btn1:focus, .btn1.focus {
+  background-color: var(--color-SteelBlue-hover);
+  border-color: var(--color-SteelBlue-hover);
+}
+  
+.btn1.disabled, .btn1:disabled {
+  color: var(--color-Font-Disabled);
+  background-color: var(--color-Disabled);
+  border-color: var(--color-Disabled);
+}
+  
+.btn1:not(:disabled):not(.disabled):active, .btn1:not(:disabled):not(.disabled).active,
+.show > .btn1.dropdown-toggle {
+  background-color: var(--color-SteelBlue);
+  border-color: var(--color-SteelBlue);
+}
+
+.btn2 {
+  color: var(--color-SteelBlue);
+  background-color: var(--color-WhiteSmoke);
+  border-color: var(--color-WhiteSmoke);
+}
+  
+.btn2:hover {
+  color: var(--color-WhiteSmoke);
+  background-color:var(--color-SteelBlue-hover);
+  border-color: var(--color-SteelBlue-hover);
+}
+  
+.btn2:focus, .btn2.focus {
+  color: var(--color-WhiteSmoke);
+  background-color: var(--color-SteelBlue-hover);
+  border-color: var(--color-SteelBlue-hover);
+}
+  
+.btn2.disabled, .btn2:disabled {
+  color: var(--color-Font-Disabled);
+  background-color: var(--color-Disabled);
+  border-color: var(--color-Disabled);
+}
+  
+.btn2:not(:disabled):not(.disabled):active, .btn2:not(:disabled):not(.disabled).active,
+.show > .btn2.dropdown-toggle {
+  background-color: var(--color-SteelBlue);
+  border-color: var(--color-SteelBlue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .btn-round{
     border-radius: 2rem;
@@ -96,3 +274,21 @@ body{
 .text-success{
   color: #155724 !important;
 }
+
+.btn-tab{
+  border-top-left-radius: 0.7em;
+  border-top-right-radius: 0.7em;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.btn-tab:not(:disabled):not(.disabled):active, .btn-tab:not(:disabled):not(.disabled).active,
+  .show > .btn-tab.dropdown-toggle {
+  color: var(--color-Font);
+  background-color: dimgray !important;
+  border-color:dimgray !important;
+  }
+  
+.btn-tab:not(:disabled):not(.disabled):active:focus, .btn-tab:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-tab.dropdown-toggle:focus {
+    box-shadow: none; /*igual al color hover*/
+  }

@@ -7,6 +7,9 @@
     background-color: #C20000;
     height: 3em;
 }
+#icon{
+    display: none;
+}
 .nav-bar {
     display: flex;
     justify-content: center;
@@ -100,6 +103,9 @@
 @media screen and (min-width: 769px){
     .header-nav{
         height: 2.5em;
+    }
+    #icon{
+        display: block;
     }
     .btn-icon{
        display: none;

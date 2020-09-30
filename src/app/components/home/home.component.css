@@ -23,6 +23,10 @@
     width: 35px ;
 }
 
+.button{
+    width: auto;
+}
+
 #profile{
     display: flex;
     flex-direction: row;
