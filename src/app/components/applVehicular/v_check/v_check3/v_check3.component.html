@@ -1,0 +1,75 @@
+<div id="div1" class="d-flex justify-content-center align-items-center">
+  <span>Completed Routes</span>
+</div>
+<div id="main">
+  <div class="d-flex mb-2">
+    <div class="input-group input-group-sm">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Group</span>
+      </div>
+      <div class="selectbox">
+        <div class="selection" id="selection6" onclick="Select6()">
+            <div class="contenido-select">
+              <span class="texto">Seleccione...</span>
+            </div>
+            <i class="icon icon-angle-down ml-3"></i>
+        </div>
+         <div class="opciones" id="opciones6">
+           <a class="opcion" *ngFor="let item of miArray" onclick="CloseSelect6()">
+             <div class="contenido-opcion" id="opcionSelect">
+                <span class="texto">{{item}}</span>
+             </div>
+            </a>
+         </div> 
+      </div>  
+      <input type="hidden" #selected3 id="inputSelect" value=""/>    
+    </div>   
+  </div>
+  <div id="div" class="d-flex">
+    <div class="input-group input-group-sm w-auto">
+      <div class="input-group-prepend">
+        <span class="input-group-text">Search by Date</span>
+      </div>
+      <input type="text" #texto class="form-text" title="" required>             
+    </div>      
+  </div>
+  <div id="tabla">
+    <table class="table table-hover table-bordered table-sm">
+      <thead class="bg-white">
+        <tr>
+          <th scope="col">Driver</th>
+          <th scope="col">Date</th>
+          <th scope="col">Hours</th>
+          <th scope="col">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mark Gonzales</td>
+          <td>05/05/2020</td>
+          <td>8h</td>
+          <td>352.000</td>       
+        </tr>
+        <tr>
+          <td>Mark Gonzales</td>
+          <td>07/05/2020</td>
+          <td>05:50:00</td>
+          <td>172.000</td>        
+        </tr>
+        <tr>
+          <td>Mark Gonzales</td>
+          <td>05/05/2020</td>
+          <td>8h</td>
+          <td>352.000</td>         
+        </tr>
+        <tr>
+          <td>Mark Gonzales</td>
+          <td>07/05/2020</td>
+          <td>05:50:00</td>
+          <td>172.000</td>        
+        </tr>
+      </tbody>
+    </table>      
+  </div> 
+</div>
+

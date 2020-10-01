@@ -1,0 +1,84 @@
+@import url('../../v_styles.css');
+
+#main{
+    width: 100%;
+    overflow: hidden;
+}
+#div1{
+    background-color: var(--color-BlueDark);
+    margin-bottom: 0.5em;
+    color: white;
+}
+
+.selectbox{
+    width: 10em;
+}
+.opciones{
+    width: 10em;
+}
+#opciones1{
+    z-index: 500 !important;
+}
+#opciones2{
+    z-index: 300 !important;
+}
+.form-text{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-color: var(--color-BlueDark);
+    width: 10em;
+}
+
+#div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5em;
+}
+#div button span{
+    display: none;
+}
+
+#tabla{
+    width: 100%;
+    height: calc(100vh - 20em);
+    overflow: scroll;
+}
+
+thead tr th {     
+    background-color: var(--color-BlueDark);
+    color: white;
+    text-align: center;  
+    position: sticky;
+    top: 0;
+    z-index: 10;  
+    box-shadow: 0 0 0 1px #dee2e6; 
+}
+
+.table tbody tr td{
+    text-align: center; 
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 576px){
+    #div{
+        flex-direction: row;
+    }
+    #div button span{
+        display: inline-block;
+    }
+    .form-text{
+        width: auto;
+    }
+    #div2{
+        margin-left: 5px;
+    }
+    
+    #tabla{
+        height: calc(100vh - 13.5em);
+    }
+}
+@media screen and (min-width: 768px){
+    #tabla{
+        height: calc(100vh - 20em);
+    }
+}

@@ -23,9 +23,7 @@
           <a class="itemNav" id="nav-check-tab" data-toggle="tab" href="#nav-check" role="tab" aria-controls="nav-check" aria-selected="false" onclick="MenuCollapse()">
             <img src="../../../../assets/images/Buscar.png" class="ml-1 mr-3"/>Check</a>
             <a class="itemNav" id="nav-permissions-tab" data-toggle="tab" href="#nav-permissions" role="tab" aria-controls="nav-permissions" aria-selected="false" onclick="MenuCollapse()">
-              <img src="../../../../assets/images/Permisos.png" class="mr-2"/>Permissions</a>
-            <a class="itemNav" id="nav-mante-tab" data-toggle="tab" href="#nav-mante" role="tab" aria-controls="nav-mante" aria-selected="false" onclick="MenuCollapse()">
-              <img src="../../../../assets/images/Config.png" class="mr-2"/>Maintenance</a>           
+              <img src="../../../../assets/images/Permisos.png" class="mr-2"/>Permissions</a>       
         </div>
       </nav>
       <div id="panel">
@@ -34,7 +32,7 @@
       </div>
     </div>
   
-    <main class="">
+    <main class="contain">
     <div class="tab-content p-2" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
           <div id="home" class="d-flex flex-column justify-content-center align-items-center">
@@ -50,14 +48,11 @@
           <app-v_rutas></app-v_rutas> 
         </div>
         <div class="tab-pane fade" id="nav-check" role="tabpanel" aria-labelledby="nav-check-tab">
-          
+          <app-v_check></app-v_check>
         </div>
         <div class="tab-pane fade" id="nav-permissions" role="tabpanel" aria-labelledby="nav-permissions-tab">
           
-        </div>
-        <div class="tab-pane fade" id="nav-mante" role="tabpanel" aria-labelledby="nav-mante-tab">
-          
-        </div>      
+        </div> 
       </div>
     </main>
   </div>

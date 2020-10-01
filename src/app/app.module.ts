@@ -34,6 +34,12 @@ import { P_TaskComponent } from './components/appPersonal/p_task/p_task.componen
 import { V_MainComponent } from './components/applVehicular/v_main/v_main.component'
 import { V_PersonalComponent } from './components/applVehicular/v_personal/v_personal.component'
 import { V_RutasComponent } from './components/applVehicular/v_rutas/v_rutas/v_rutas.component'
+import { V_Rutas1Component } from './components/applVehicular/v_rutas/v_rutas1/v_rutas1.component'
+import { V_Rutas2Component } from './components/applVehicular/v_rutas/v_rutas2/v_rutas2.component'
+import { V_CheckComponent } from './components/applVehicular/v_check/v_check/v_check.component'
+import { V_Check1Component } from './components/applVehicular/v_check/v_check1/v_check1.component'
+import { V_Check2Component } from './components/applVehicular/v_check/v_check2/v_check2.component'
+import { V_Check3Component } from './components/applVehicular/v_check/v_check3/v_check3.component'
 
 //Services
 import { TokenInterceptorService } from './lib/token-interceptor.service';
@@ -67,7 +73,13 @@ import { AgmCoreModule } from '@agm/core';
     //Vehicular
     V_MainComponent,
     V_PersonalComponent,
-    V_RutasComponent
+    V_RutasComponent,
+    V_Rutas1Component,
+    V_Rutas2Component,
+    V_CheckComponent,
+    V_Check1Component,
+    V_Check2Component,
+    V_Check3Component
   ],
   imports: [
     BrowserModule,

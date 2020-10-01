@@ -1,0 +1,150 @@
+@import url('../../v_styles.css');
+
+#div1{
+    background-color: var(--color-BlueDark);
+    margin-bottom: 0.5em;
+    color: white;
+}
+
+.selectbox{
+    width: 10em;
+}
+
+.opciones{
+    width: 10em;
+}
+#div-opciones{
+    display: flex;
+    flex-direction: column;
+}
+.div-opc{
+    display: flex;
+    height: 2em;
+}
+.inp-text{
+    display: none;
+}
+#btnConfig{
+    width: 4em;
+}
+#btnConfig>span{
+    display: none;
+}
+
+#tabla{
+    width: 100%;
+    height: calc(100vh - 27em);
+    overflow: scroll;
+}
+
+thead #head1 th {
+    position: sticky;
+    top: 0;
+    height: 2.1em;
+    text-align: center;  
+    box-shadow: 0 0 0 1px #dee2e6; 
+}
+
+thead #head2 th {
+    position: sticky;
+    top: 2.1em;
+    background-color: var(--color-BlueDark);
+    color: white;
+    text-align: center;  
+    box-shadow: 0 0 0 1px #dee2e6; 
+}
+
+.table tbody tr td{
+    text-align: center; 
+    vertical-align: middle;
+}
+
+.form-control:focus,
+.form-control:active{
+    outline: none;
+    box-shadow: none;
+}
+.indice{
+    font-size: 0.7em;
+}
+.conv1{
+    border: 1px solid gray;
+}
+.conv2{
+    background-color: #6B8E23;
+    border: 1px solid #6B8E23;
+}
+.conv3{
+    background-color: #4682B4;
+    border: 1px solid #4682B4;
+}
+.conv4{
+    background-color: #ADD8E6;
+    border: 1px solid #ADD8E6;
+}
+.conv5{
+    background-color: #008000;
+    border: 1px solid #008000;
+}
+.conv6{
+    background-color: #FF4500;
+    border: 1px solid #FF4500;
+}
+.conv7{
+    background-color: #FA8072;
+    border: 1px solid #FA8072;
+}
+.conv8{
+    background-color: #FFD700;
+    border: 1px solid #FFD700;
+}
+.conv9{
+    background-color: #D50000;
+    border: 1px solid #D50000;
+}
+.espacio{
+    height: 5px;
+}
+#div2{
+    display: flex;
+    justify-content: center;
+    height: 2em;
+    margin-bottom: 0.5em;
+}
+#btn-Ver{
+    margin-left: auto;
+}
+
+@media screen and (min-width: 576px){
+    #btnConfig{
+        width: 12em;
+    }
+    #btnConfig>span{
+        margin-left: 0.5em;
+        display: inline-block;
+    }
+    #tabla{
+        height: calc(100vh - 8em);
+    }
+    #main{
+        overflow: scroll;
+    }    
+    #div-opciones{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #main{
+        overflow: visible;
+    }
+    #tabla{
+        height: calc(100vh - 24em);
+    }
+    .inp-text{
+        display: inline-block;
+    }
+    #btn-Routes{
+        width: 12em;
+    }
+}

@@ -1,1 +1,5 @@
 @import url('../../p_styles.css');
+
+.tab-content{
+    background-color: white;
+}

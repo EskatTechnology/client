@@ -1,0 +1,24 @@
+@import url('../../v_styles.css');
+
+.tab-pane{
+    height: calc(100vh - 12em);
+    overflow: auto;
+}
+.tab-content{
+    background-color: white;
+}
+#nav-tab a{
+    width: 5em;
+}
+span {
+    display: none;
+}
+
+@media screen and (min-width: 576px){
+    #nav-tab a{
+        width: auto;
+    }
+    span {
+        display: inline-block;
+    }
+}

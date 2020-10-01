@@ -1,0 +1,101 @@
+@import url('../../v_styles.css');
+
+#main{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 12em);
+    width: 100%;
+}
+
+#left{
+    width: 100%;
+}
+
+#right{   
+    width: 100%;  
+}
+
+agm-map{
+    height: 15em;
+}
+
+.selectbox{
+    width: 10em;
+}
+
+.opciones{
+    width: 10em;
+}
+#bg-azul{
+    background-color: var(--color-BlueDark);
+    color: white;
+}
+#bg-azul2{
+    background-color: var(--color-Blue-hover);
+    color: white;
+    font-size: 0.9em;
+}
+
+.form-radius {
+    border: 1px solid var(--color-BlueDark);
+    border-radius: 1em;
+  }
+  
+.form-radius:focus {
+    box-shadow: none;
+}
+
+thead tr th {     
+    background-color: var(--color-BlueDark);
+    color: white;
+    text-align: center;  
+    position: sticky;
+    top: 0;
+    z-index: 10;  
+    box-shadow: 0 0 0 1px #dee2e6; 
+}
+
+.table tbody tr td{
+    text-align: center; 
+    vertical-align: middle;
+}
+
+#div3{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 576px){  
+    #txtbuscar{
+        flex-grow: 1;
+        margin-right: 0.5em;
+    }
+    #div3{
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (min-width: 769px){
+    #main{
+        flex-direction: row;
+    }
+    
+    #left{
+        width: 50%;
+        margin-right: 1em;
+    }
+    
+    #right{
+        width: 50%;
+    }
+
+    #tabla{
+        overflow: auto;
+        height: calc(100vh - 22em);
+    }
+
+    agm-map{
+        height: calc(100vh - 14em);
+    }    
+}

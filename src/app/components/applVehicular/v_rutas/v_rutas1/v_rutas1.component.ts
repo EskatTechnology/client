@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-v_rutas1',
@@ -8,7 +9,16 @@ import { Component, OnInit } from '@angular/core';
 export class V_Rutas1Component implements OnInit {
 
   constructor() { }
-
+  
+  miArray: string[] = [
+    "Administracion",    
+    "Personal",
+    "Vehicular",
+    "Inventario"
+  ];
+  
+  model1: NgbDateStruct;
+  
   ngOnInit() {
   }
 
