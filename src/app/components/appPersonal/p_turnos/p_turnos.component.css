@@ -25,6 +25,7 @@ thead #head1 th {
     position: sticky;
     top: 0;
     height: 2.1em;
+    background-color: transparent;
     color: var(--color-Red);
     text-align: center;  
     box-shadow: 0 0 0 1px #dee2e6; 

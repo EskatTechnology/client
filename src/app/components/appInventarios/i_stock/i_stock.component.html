@@ -1,0 +1,51 @@
+<div class="d-flex align-items-center">
+  <img src="../../../../assets/images/stock_max.png"/>
+  <h3 class="font-weight-bold ml-2">Stock</h3>
+</div>
+<div class="d-flex mt-2">
+  <div class="input-group input-group-sm">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Search</span>
+    </div>
+    <input type="text" class="form-control">
+    <div class="input-group-append">
+      <button class="btn btn-1 btn-r">
+        <i class="icon icon-search"></i>
+      </button>      
+    </div>
+    <div class="input-group-append ml-1">
+      <button class="btn btn-2 btn-square">
+        <i class="icon icon-refresh"></i>
+      </button>      
+    </div>
+    
+  </div>  
+  <button class="btn btn-sm btn-3 btn-radius pl-3 pr-3 ml-auto">
+    <i class="icon icon-plus mr-1"></i>
+    <span>New</span>
+  </button>      
+</div>
+<div id="tabla">
+  <table class="table table-sm table-bordered table-hover">
+    <thead>
+    <tr>
+      <th scope="col">Code</th>
+      <th scope="col">Product</th>
+      <th scope="col">Available</th>
+      <th scope="col">Reserved</th>
+      <th scope="col">Total</th>
+      <th scope="col">Measure</th>
+    </tr>
+    </thead>
+    <tbody class="bg-white">
+    <tr *ngFor="let country of countries; index as i">
+      <td>{{ country.code }}</td>
+      <td>{{ country.product }}</td>
+      <td>{{ country.available }}</td>
+      <td>{{ country.reserved }}</td>
+      <td>{{ country.total }}</td>
+      <td>{{ country.measure }}</td>
+    </tr>
+    </tbody>
+  </table> 
+</div> 

@@ -1,0 +1,23 @@
+@import url('../i_styles.css');
+
+h3{
+    color: #0F5FA6;
+}
+
+.input-group{
+    width: 70%;
+}
+
+#tabla{
+    width: 100%;
+    margin-top: 1em;
+    background-color: white;
+    height: calc(100vh - 12em);
+    overflow: auto;
+}
+
+@media screen and (min-width:576px){
+    .input-group{
+        width: 45%;
+    }
+}

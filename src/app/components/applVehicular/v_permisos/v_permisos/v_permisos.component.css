@@ -1,0 +1,9 @@
+@import url('../../v_styles.css');
+
+.tab-content{
+    background-color: white;
+}
+
+#nav-tab a{
+    width: 7em;
+}

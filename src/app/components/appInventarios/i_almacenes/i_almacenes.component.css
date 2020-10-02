@@ -1,0 +1,58 @@
+@import url('../i_styles.css');
+
+h3{
+    color: #AA66CC;
+}
+
+.input-group{
+    width: auto;
+}
+
+#tabla{
+    width: 100%;
+    margin-top: 1em;
+    background-color: white;
+    height: calc(100vh - 17em);
+    overflow: auto;
+}
+
+.selectbox{
+    width: 8em !important;
+}
+.opciones{
+    width: 8em !important;
+}
+.btn-opc span{
+    display: none;
+}
+.div2{
+    display: flex;
+    flex-direction: column;
+}
+.div2 .div{
+    margin-top: 0.5em;
+}
+
+@media screen and (min-width:576px){
+    .div{
+        margin-left: 1em;
+    }
+    .selectbox{
+        width: 10em !important;
+    }
+    .opciones{
+        width: 10em !important;
+    }
+    .btn-opc span{
+        display: inline-block;
+    }
+    .div2{
+        flex-direction: row;
+    }
+    .div2 .div{
+        margin-top: 0em;
+    }
+    #tabla{
+        height: calc(100vh - 14em);
+    }
+}

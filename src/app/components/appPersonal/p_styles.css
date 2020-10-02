@@ -120,6 +120,10 @@ box-shadow: none;
     color: white;
 }
 
+.table{
+    font-size: 0.825em;
+}
+
 
 /*btn-1 Boton Login*/
 .btn-1 {

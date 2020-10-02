@@ -1,0 +1,66 @@
+<div class="main">
+  <div class="header-nav">
+    <button id="btnMenu" class="btn-icon" type="button" data-target="#navContent" onclick="BtnMenu()">
+      <span class="icon-bars"></span>
+    </button>
+    <img src="../../../../assets/images/IconoInventario.png" id="icon" class="align-self-center ml-2" width="24px" height="24px"/>
+    <a class="nav-bar" href="/inventario">Inventory Control</a>
+    <button id="btn-Close"  class="ml-auto" (click)="Cerrar()">
+      <i class="icon icon-close"></i>
+  </button>
+  </div>
+  <div id="container">
+    <div id="navContent">
+      <nav> 
+        <div class="nav" id="nav-tab" role="tablist">
+          <a class="itemNav" id="nav-stock-tab" data-toggle="tab" href="#nav-stock" role="tab" aria-controls="nav-stock" aria-selected="false" onclick="MenuCollapse()">
+            <div><img src="../../../../assets/images/stock.png" class="mr-2"/></div>Stock</a>
+          <a class="itemNav" id="nav-orders-tab" data-toggle="tab" href="#nav-orders" role="tab" aria-controls="nav-orders" aria-selected="false" onclick="MenuCollapse()">
+            <div><img src="../../../../assets/images/Pedido.png" class="mr-2"/></div>Orders</a>
+          <a class="itemNav" id="nav-business-tab" data-toggle="tab" href="#nav-business" role="tab" aria-controls="nav-business" aria-selected="false" onclick="MenuCollapse()">
+            <div><img src="../../../../assets/images/Empresas.png" class="ml-1 mr-3"/></div>Business</a>
+          <a class="itemNav" id="nav-warehouse-tab" data-toggle="tab" href="#nav-warehouse" role="tab" aria-controls="nav-warehouse" aria-selected="false" onclick="MenuCollapse()">
+            <div><img src="../../../../assets/images/Almacenes.png" class="mr-2"/></div>Warehouses</a>   
+          <a class="itemNav" id="nav-dispatch-tab" data-toggle="tab" href="#nav-dispatch" role="tab" aria-controls="nav-dispatch" aria-selected="false" onclick="MenuCollapse()">
+            <div><img src="../../../../assets/images/Despachos.png" class="ml-1 mr-3"/></div>Dispatch</a>
+          <a class="itemNav" id="nav-traceability-tab" data-toggle="tab" href="#nav-traceability" role="tab" aria-controls="nav-traceability" aria-selected="false" onclick="MenuCollapse()">
+            <div><img src="../../../../assets/images/Trazabilidad.png" class="mr-2"/></div>Traceability</a>       
+        </div>
+      </nav>
+      <div id="panel">
+        <img src="../../../../assets/images/LogoEskat.png" width="80%"/>
+        <span>www.eskat-usa.com</span>
+      </div>
+    </div>
+  
+    <main class="contain">
+    <div class="tab-content p-2" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div id="home" class="d-flex flex-column justify-content-center align-items-center">
+            <img src="../../../../assets/images/LogoEskat.png" width="80%"/>
+            <h3 class="font-weight-bold mt-3">Inventory Control</h3>
+            <h6>www.eskat-usa.com</h6>
+          </div>         
+        </div>
+        <div class="tab-pane fade" id="nav-stock" role="tabpanel" aria-labelledby="nav-stock-tab">      
+          <app-i_stock></app-i_stock>
+        </div>
+        <div class="tab-pane fade" id="nav-orders" role="tabpanel" aria-labelledby="nav-orders-tab">
+         <app-i_pedidos></app-i_pedidos>
+        </div>
+        <div class="tab-pane fade" id="nav-business" role="tabpanel" aria-labelledby="nav-business-tab">
+          <app-i_empresas></app-i_empresas>
+        </div>
+        <div class="tab-pane fade" id="nav-warehouse" role="tabpanel" aria-labelledby="nav-warehouse-tab">
+          <app-i_almacenes></app-i_almacenes>
+        </div> 
+        <div class="tab-pane fade" id="nav-dispatch" role="tabpanel" aria-labelledby="nav-dispatch-tab">
+          <app-i_despachos></app-i_despachos>
+        </div>
+        <div class="tab-pane fade" id="nav-traceability" role="tabpanel" aria-labelledby="nav-traceability-tab">
+          <app-i_trazabilidad></app-i_trazabilidad>
+        </div> 
+      </div>
+    </main>
+  </div>
+</div>

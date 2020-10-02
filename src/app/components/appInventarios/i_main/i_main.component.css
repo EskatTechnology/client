@@ -1,11 +1,11 @@
 .main{
-    background-color: #F0F0F0;
+    background-color: #DCDCDC;
     height: 100%;
     width: 100%;
 }
 .header-nav{
     display: flex;
-    background-color: #233656;
+    background-color: #0E5FA5;
     height: 3em;
 }
 #icon{
@@ -29,7 +29,7 @@
   width: 2em;
 }
 .btn-icon:hover{
-    color: #415B76;
+    color: #1C79C9;
     background-color: rgba(0, 0, 0, 0.1);
 }
 .btn-icon:focus, .btn-icon:active{
@@ -50,7 +50,7 @@
 
 #btn-Close:hover{
     background-color: rgba(0, 0, 0, 0.1);
-    color:  #415B76;
+    color:  #1C79C9;
 }
 
 #container{
@@ -67,7 +67,7 @@
 }
 
 #navContent{
-    background-color: #233656;    
+    background-color: #F5F5F5;    
     position: absolute;
     top: 3em;
     z-index: 1000;
@@ -83,10 +83,10 @@
     align-items: center;
     padding: 0.7em;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 .itemNav:hover{
-    background-color: #415B76;
+    background-color: #D3D3D3;
 }
 
 #container> main{
@@ -102,6 +102,12 @@
 
 #panel{
     display: none;
+}
+.itemNav div{
+    width: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 769px){
@@ -141,13 +147,6 @@
         flex-direction: column;
     }
     #panel>span{
-        color: white;
+        color: black;
     }
 }
-
-
-
-
-
-
-

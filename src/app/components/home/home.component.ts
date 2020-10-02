@@ -76,6 +76,10 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['/personal']);
   }
 
+  Inventario(){
+    this.router.navigate(['/inventario']);
+  }
+
   Vehicular(){
     this.router.navigate(['/vehicular']);
   }

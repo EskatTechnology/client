@@ -2,6 +2,7 @@
 @import url("./assets/icons/style.css");
 @import url("./app/components/appAdmin/a_styles.css");
 @import url("./app/components/appPersonal/p_styles.css");
+@import url('./app/components/appInventarios/i_styles.css');
 
 :root {
     --color-Disabled: #848484 !important;
@@ -20,7 +21,7 @@
     --color-Reportes-Hover: #AD84DE;
 
     --color-BlueDark: #233656 !important;
-    --color-Blue-hover: #415B76 !important;   
+    --color-Blue-hover: #415B76 !important; 
 }
 
 *{

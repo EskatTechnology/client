@@ -1,0 +1,104 @@
+<div class="main" >
+  <div id="bg-rojo" class="d-flex justify-content-center align-items-center mb-1">
+    <span>Availability of Personnel</span>
+  </div>
+  <div class="input-group input-group-sm mb-1">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Group</span>
+    </div>
+    <div class="selectbox">
+      <div class="selection" id="selection8" onclick="Select8()">
+          <div class="contenido-select">
+            <span class="texto">Seleccione...</span>
+          </div>
+          <i class="icon icon-angle-down ml-3"></i>
+      </div>
+       <div class="opciones" id="opciones8">
+         <a class="opcion" *ngFor="let item of miArray" onclick="CloseSelect8()">
+           <div class="contenido-opcion" id="opcionSelect">
+              <span class="texto">{{item}}</span>
+           </div>
+          </a>
+       </div> 
+    </div>  
+    <input type="hidden" #selected3 id="inputSelect" value=""/>    
+  </div>  
+  <div class="input-group input-group-sm mb-1">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Search for</span>
+    </div>
+    <div class="selectbox">
+      <div class="selection" id="selection9" onclick="Select9()">
+          <div class="contenido-select">
+            <span class="texto">Seleccione...</span>
+          </div>
+          <i class="icon icon-angle-down ml-3"></i>
+      </div>
+       <div class="opciones" id="opciones9">
+         <a class="opcion">
+           <div class="contenido-opcion" id="opcionSelect">
+              <span class="texto">Date</span>
+           </div>
+          </a>
+          <a class="opcion">
+            <div class="contenido-opcion" id="opcionSelect">
+               <span class="texto">Person</span>
+            </div>
+           </a>
+       </div> 
+    </div>  
+    <input type="hidden" #selected3 id="inputSelect" value=""/>    
+  </div>  
+  <div class="contenedor">
+    <div id="left" class="mb-2">
+      <div id="bg-rojo" class="d-flex justify-content-center align-items-center mb-1">
+        <span>Vailable Users</span>
+      </div>
+      <div id="tabla">
+        <table class="table table-sm table-bordered table-hover">
+          <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Reason</th>
+            <th scope="col">State</th>
+            <th scope="col">Date</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let country of countries; index as i">
+            <td>{{ country.name }}</td>
+            <td>{{ country.reason }}</td>
+            <td>{{ country.reason }}</td>
+            <td>{{ country.date }}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>     
+    </div>
+    <div id="right">
+      <div id="bg-rojo" class="d-flex justify-content-center align-items-center mb-1">
+        <span>Unavailable Users</span>
+      </div>
+      <div id="tabla">
+        <table class="table table-sm table-bordered table-hover">
+          <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Reason</th>
+            <th scope="col">State</th>
+            <th scope="col">Date</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let country of countries; index as i">
+            <td>{{ country.name }}</td>
+            <td>{{ country.reason }}</td>
+            <td>{{ country.reason }}</td>
+            <td>{{ country.date }}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>          
+    </div>
+  </div>
+</div>

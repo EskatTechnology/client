@@ -6,7 +6,7 @@ import { HomeComponent } from '../app/components/home/home.component';
 import { A_MainComponent } from '../app/components/appAdmin/a_main/a_main.component'
 import { P_MainComponent } from '../app/components/appPersonal/p_main/p_main.component'
 import { V_MainComponent } from './components/applVehicular/v_main/v_main.component';
-
+import { I_MainComponent } from './components/appInventarios/i_main/i_main.component'
 
 
 const routes: Routes = [
@@ -32,6 +32,11 @@ const routes: Routes = [
   {
     path: 'personal',
     component: P_MainComponent,
+    //canActivate:[AuthGuard]
+  },
+  {
+    path: 'inventario',
+    component: I_MainComponent,
     //canActivate:[AuthGuard]
   },
   {

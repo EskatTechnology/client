@@ -1,0 +1,95 @@
+<div class="d-flex align-items-center">
+  <img src="../../../../assets/images/Almacen_max.png"/>
+  <h3 class="font-weight-bold ml-2">Warehouses</h3>
+</div>
+<div class="d-flex mb-2 mt-2">
+  <div class="input-group input-group-sm">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Group</span>
+    </div>
+    <div class="selectbox">
+      <div class="selection" id="selection2" onclick="Select2()">
+          <div class="contenido-select">
+            <span class="texto">Seleccione...</span>
+          </div>
+          <i class="icon icon-angle-down ml-3"></i>
+      </div>
+       <div class="opciones" id="opciones2">
+         <a class="opcion" *ngFor="let item of miArray" onclick="CloseSelect2()">
+           <div class="contenido-opcion" id="opcionSelect">
+              <span class="texto">{{item}}</span>
+           </div>
+          </a>
+       </div> 
+    </div>  
+    <input type="hidden" #selected3 id="inputSelect" value=""/>    
+  </div> 
+  <button class="btn btn-sm btn-3 btn-radius pl-3 pr-3 ml-auto btn-opc">
+    <i class="icon icon-plus mr-1"></i>
+    <span>Warehouse</span>
+  </button> 
+  <button class="btn btn-sm btn-2 btn-radius pl-3 pr-3 ml-1 btn-opc">
+    <i class="icon icon-plus mr-1"></i>
+    <span>Location</span>
+  </button> 
+  <button class="btn btn-sm btn-1 btn-radius pl-3 pr-3 ml-1 btn-opc">
+    <i class="icon icon-plus mr-1"></i>
+    <span>Transfer</span>
+  </button>    
+</div>
+<div class="div2 mt-2">
+  <div class="input-group input-group-sm">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Search for</span>
+    </div>
+    <div class="input-group-append">
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-sm btn-secondary btn-sin active">
+          <input type="radio" name="options" id="option1" checked> Product
+        </label>
+        <label class="btn btn-sm btn-secondary btn-sin">
+          <input type="radio" name="options" id="option2"> Location
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="input-group input-group-sm div">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Product</span>
+    </div>
+    <input type="text" class="form-control">
+    <div class="input-group-append">
+      <button class="btn btn-1 btn-r">
+        <i class="icon icon-search"></i>
+      </button>      
+    </div>
+    <div class="input-group-append ml-1">
+      <button class="btn btn-2 btn-square">
+        <i class="icon icon-refresh"></i>
+      </button>      
+    </div>    
+  </div>        
+</div>
+<div id="tabla">
+  <table class="table table-sm table-bordered table-hover">
+    <thead>
+    <tr>
+      <th scope="col">Code</th>
+      <th scope="col">Provider</th>
+      <th scope="col">Application Date</th>
+      <th scope="col">Deliver Date</th>
+      <th scope="col">State</th>
+    </tr>
+    </thead>
+    <tbody class="bg-white">
+    <tr *ngFor="let country of countries; index as i">
+      <td>{{ country.code }}</td>
+      <td>{{ country.product }}</td>
+      <td>{{ country.location  }}</td>
+      <td>{{ country.cantidad }}</td>
+      <td>{{ country.measure }}</td>
+    </tr>
+    </tbody>
+  </table> 
+</div> 

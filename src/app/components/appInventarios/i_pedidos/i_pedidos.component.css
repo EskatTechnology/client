@@ -1,0 +1,30 @@
+@import url('../i_styles.css');
+
+h3{
+    color: #669900;
+}
+
+.input-group{
+    width: 70%;
+}
+
+#tabla{
+    width: 100%;
+    margin-top: 1em;
+    background-color: white;
+    height: calc(100vh - 14em);
+    overflow: auto;
+}
+
+.selectbox{
+    width: 10em !important;
+}
+.opciones{
+    width: 10em !important;
+}
+
+@media screen and (min-width:576px){
+    .input-group{
+        width: 45%;
+    }
+}

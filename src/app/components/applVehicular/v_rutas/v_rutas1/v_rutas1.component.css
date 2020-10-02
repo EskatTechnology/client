@@ -43,6 +43,8 @@ thead #head1 th {
     height: 2.1em;
     text-align: center;  
     box-shadow: 0 0 0 1px #dee2e6; 
+    background-color: transparent;
+    color: var(--color-BlueDark);
 }
 
 thead #head2 th {

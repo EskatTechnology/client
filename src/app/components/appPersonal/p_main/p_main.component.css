@@ -101,6 +101,10 @@
     height: calc(100vh - 5em);
 }
 
+#panel{
+    display: none;
+}
+
 @media screen and (min-width: 769px){
     .header-nav{
         height: 2.5em;
@@ -127,6 +131,18 @@
     #container> main{
         width: 87%;
         height: calc(100vh - 2.5em);
+    }
+    #panel{       
+        position: absolute;       
+        bottom: 0;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #panel>span{
+        color: white;
     }
 }
 
